@@ -1,0 +1,106 @@
+@import "../../common/font";
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 900;
+
+    .inner{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 46px;
+        margin-top: 2.396vw;
+        height: max-content;
+    }
+
+    .gnb{
+        width: calc(100% - 54px);
+        width: calc(100% - 2.813vw);
+        ul{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        li{
+            font-size: 42px;
+            font-size: 2.188vw;
+            line-height: 0;
+            height: 0;
+            padding: 21px 0;
+            padding: 1.094vw 0;
+            font-family: "Graphik-regular";
+            font-weight: 400;
+            color: $black1;
+            letter-spacing: 0.5px;
+            transition: 0.5s cubic-bezier(.25,.46,.45,.94);
+
+            &:first-child{
+                margin-right: auto;
+            }
+            &:last-child{
+                margin-left: 83px;
+                margin-left: 4.323vw;
+            }
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+        a{
+            letter-spacing: -1.5px;
+        }
+    }
+
+    .logo{
+        width: 58px;
+        width: 3.021vw;
+        height: 32px;
+        height: 1.667vw;
+        margin-right: 83px;
+        margin-right: 4.323vw;
+        position: relative;
+        transition: 0.5s cubic-bezier(.25,.46,.45,.94);
+        
+        a{
+            height: 100%;
+        }
+        img{
+            position: absolute;
+            height: 100%;
+            opacity: 0;
+            transition: 0.5s cubic-bezier(.25,.46,.45,.94);
+
+            &:first-child{
+                opacity: 1;
+            }
+        }
+    }
+
+    &.small{
+        .gnb{
+            li{
+                font-size: 32px;
+                font-size: 1.667vw;
+                padding: 16px 0;
+                padding: 0.833vw 0;
+                
+                &:last-child{
+                    margin-left: 60px;
+                    margin-left: 3.125vw;
+                }
+            }
+        }
+        .logo{
+            width: 42px;
+            width: 2.188vw;
+            height: 26px;
+            height: 1.354vw;
+            margin-right: 60px;
+            margin-right: 3.125vw;
+        }
+    }
+}

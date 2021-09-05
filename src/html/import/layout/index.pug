@@ -1,0 +1,198 @@
+main(data-scroll-container) 
+    section.intro(data-scroll-section)
+        .intro--wrapper
+            .line--container(data-scroll data-scroll-speed="2") 
+                .line--circle 
+                .line--diagonal
+                .line--horizental
+                .line--vertical
+            .intro--text--container 
+                .intro--text--inner
+                    .intro--text--group.outside.fadeIn(data-scroll data-scroll-speed="-2") 
+                        h2 Seungyeol 
+                        h2 Portfolio 
+            .intro--subText--container#trigger1
+                .intro--text--inner
+                
+                    a(href="./works.html") Go to Works
+                    .intro--text--group  
+                        span Interactive
+                        span Fancy
+                        span Trendy
+                        button.intro--animBtn
+                            i 
+                            | Click here!
+            .intro--img--container 
+                .intro--img--inner
+                    .intro--text--group.inside.fadeIn
+                        h2(data-scroll data-scroll-speed="-2") Seungyeol 
+                        h2(data-scroll data-scroll-speed="-2") Portfolio 
+                    ul.intro--img--group
+                        li 
+                            img(src="./images/visual/flower1.jpg", alt="flower") 
+                        li 
+                            img(src="./images/visual/flower2.jpg", alt="flower") 
+                        li 
+                            img(src="./images/visual/flower3.jpg", alt="flower") 
+
+                    .line--container(data-scroll data-scroll-speed="2") 
+                        .line--circle 
+                        .line--diagonal
+                        .line--horizental
+                        .line--vertical
+            .intro--btn--container 
+                button.blue--change--btn in blue
+                button.light--change--btn.active in light
+
+    section.about(data-scroll-section)
+        ul 
+            li 
+                h3 
+                    span P
+                    span u
+                    span b
+                    span l
+                    span i
+                    span s
+                    span h
+                    span e
+                    span r
+                i 
+                h3.fc-gray.italic 
+                    span R
+                    span e
+                    span s
+                    span p
+                    span o
+                    span n
+                    span s
+                    span i
+                    span v
+                    span e
+            li 
+                h3.fc-blue 
+                    span V
+                    span i
+                    span s
+                    span u
+                    span a
+                    span l
+                h3 
+                    span M
+                    span o
+                    span b
+                    span i
+                    span l
+                    span e
+                em
+                h3 
+                    span W
+                    span e
+                    span b
+            li 
+                h3.italic 
+                    span I
+                    span n
+                    span t
+                    span e
+                    span r
+                    span a
+                    span c
+                    span t
+                    span i
+                    span v
+                    span e
+                h3(data-glitch="Animation") 
+                    span A
+                    span n
+                    span i
+                    span m
+                    span a
+                    span t
+                    span i
+                    span o
+                    span n
+    
+    section.works#stick(data-scroll-section)
+        .works--obj--group.blue(data-scroll data-scroll-sticky data-scroll-target="#stick")
+            .circle 
+            .rectangle
+            .triangle &#9650
+            .rectangle
+            .triangle &#9650
+            .circle 
+            .triangle &#9650
+        .works--title(data-scroll data-scroll-sticky data-scroll-target="#stick")
+            .works--inner 
+                h3.active(data-glitch="S")  s
+                h3(data-glitch="K")  k
+                h3(data-glitch="B")  b
+                h3(data-glitch="H")  h
+        article.works--item#blue 
+            .works--item--img 
+                img(src="./images/works/samwhapaper-visual.png", alt="samwhapaper" data-scroll data-scroll-speed="2")
+                .works--item--bg 
+            .works--item--text( data-scroll data-scroll-speed="1")
+                .works--item--title 
+                    span Publishing
+                    h4.fc-blue SamwhaPaper
+                    span Interaction Adaptive Web Site
+                .works--item--desc 
+                    p HTML5 / CSS3 / JAVASCRIPT / JQUERY / 
+                        br
+                        | SWIPER.JS / SCROLLMAGIC.JS / LUCID.JS / GSAP / FULLPAGE.JS
+                a.works--item--link(href="#") Move Detail Page
+
+        article.works--item#black 
+            .works--item--img 
+                img(src="./images/works/kingkroach-visual.png", alt="kingkroach" data-scroll data-scroll-speed="2")
+                .works--item--bg
+            .works--item--text( data-scroll data-scroll-speed="1")
+                .works--item--title 
+                    span Publishing
+                    h4 KingKroach
+                    span Interaction Adaptive Web Site
+                .works--item--desc 
+                    p HTML5 / CSS3 / JAVASCRIPT / JQUERY / 
+                        br
+                        | SWIPER.JS / SCROLLMAGIC.JS / LUCID.JS / GSAP / FULLPAGE.JS
+                a.works--item--link(href="#") Move Detail Page
+
+        article.works--item#brown
+            .works--item--img 
+                img(src="./images/works/bossathome-visual.png", alt="bossathome" data-scroll data-scroll-speed="2")
+                .works--item--bg         
+            .works--item--text( data-scroll data-scroll-speed="1")
+                .works--item--title 
+                    span Publishing
+                    h4 Boss at Home
+                    span Interaction Adaptive Web Site
+                .works--item--desc 
+                    p HTML5 / CSS3 / JAVASCRIPT / JQUERY / 
+                        br
+                        | SWIPER.JS / SCROLLMAGIC.JS / LUCID.JS / GSAP / FULLPAGE.JS
+                a.works--item--link(href="#") Move Detail Page
+
+        article.works--item#green
+            .works--item--img 
+                img(src="./images/works/healthmax-visual.png", alt="healthmax" data-scroll data-scroll-speed="2")
+                .works--item--bg         
+            .works--item--text( data-scroll data-scroll-speed="1")
+                .works--item--title 
+                    span Publishing
+                    h4 Healthmax
+                    span Interaction Adaptive Web Site
+                .works--item--desc 
+                    p HTML5 / CSS3 / JAVASCRIPT / JQUERY / 
+                        br
+                        | SWIPER.JS / SCROLLMAGIC.JS / LUCID.JS / GSAP / FULLPAGE.JS
+                a.works--item--link(href="#") Move Detail Page
+
+    section.works-link(data-scroll-section)
+        a.works--all-link(href="./works.html") 
+            span View all projects 
+    section.thanks-text(data-scroll-section)
+        i 
+        h4 Thanks you for looking
+            br
+            | at my portfolio
