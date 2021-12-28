@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+    - var pageName = "worksDetail";
+    include ./import/partials/head.pug
+    body(data-scroll-container)
+        include ./import/partials/subHeader.pug
+
+        include ./import/layout/worksDetail.pug
+        
+        include ./import/components/hambugerMenu.pug
+        
+        include ./import/components/pagemove.pug
+        
+        include ./import/partials/subScript.pug

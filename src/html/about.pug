@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+    - var pageName = "about";
+    include ./import/partials/head.pug
+    body(data-scroll-container)
+        include ./import/partials/subHeader.pug
+
+        include ./import/layout/about.pug
+        
+        include ./import/components/inquiryMoveSec.pug
+
+        include ./import/partials/footer.pug
+
+        include ./import/components/hambugerMenu.pug
+        
+        include ./import/components/pagemove.pug
+        
+        include ./import/partials/subScript.pug

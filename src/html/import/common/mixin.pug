@@ -1,0 +1,43 @@
+-var f = false;
+-var t = true;
+
+mixin worksList 
+    section.section.works--section 
+        ul.inner.works--content--list 
+            li.col
+                +workItems(f,f,f)
+                +workItems(f,f,f)
+            li.col
+                +workItems(f,f,t)
+                +workItems(t,f,f)
+            li.col
+                +workItems(f,f,t)
+                +workItems(f,f,f)
+    section.section.works--section 
+        ul.inner.works--content--list 
+            li.col
+                +workItems(f,t,f)
+                +workItems(f,f,f)
+            li.col
+                +workItems(f,f,t)
+        include ../components/sns.pug
+
+mixin workItems(line,smalls,italic)
+    if line 
+        a(href="worksDetail.html" data-projectName="")
+            .line 
+                span(data-glitch="")
+            h2(data-glitch="")
+    else if smalls 
+        a(href="worksDetail.html" data-projectName="")
+            span(data-glitch="")
+            h2(data-glitch="") 
+                small(data-glitch="")
+    else if italic 
+        a(href="worksDetail.html" data-projectName="")
+            span(data-glitch="")
+            h2.italic(data-glitch="")      
+    else
+        a(href="worksDetail.html" data-projectName="")
+            span(data-glitch="")
+            h2(data-glitch="")

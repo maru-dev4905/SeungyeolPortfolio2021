@@ -1,11 +1,19 @@
 doctype html
 html(lang="en")
+    - var pageName = "main";
     include ./import/partials/head.pug
-    body 
+    body(data-scroll-container)
         include ./import/partials/header.pug
 
         include ./import/layout/index.pug
+        
+        include ./import/components/inquiryMoveSec.pug
 
         include ./import/partials/footer.pug
+        
+        include ./import/components/hambugerMenu.pug
+        
+        include ./import/components/pagemove.pug
+
 
         include ./import/partials/script.pug

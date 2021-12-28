@@ -1,0 +1,19 @@
+@mixin responsive($device) {
+    @if $device == "iphone" {
+        @media screen and (max-width: $minIphone){
+            @content;
+        }
+    } @else if $device == "tablet" {
+        @media screen and (max-width: $maxTablet) {
+            @content;
+        }
+    } @else if $device == "iphone-l" {
+        @media screen and (min-width: $minIphone) and (max-width: $maxIphone) and (orientation: landscape) {
+            @content;
+        }
+    } @else if $device == "ipad-l" {
+        @media screen and (min-width: $minTablet) and (max-width: $maxTablet) and (orientation: landscape) {
+            @content;
+        }
+    }
+}

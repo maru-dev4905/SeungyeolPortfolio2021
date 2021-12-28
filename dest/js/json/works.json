@@ -1,0 +1,35 @@
+{
+    "name" : [
+         "SamwhaPaper"
+        ,"DFRY"
+        ,"HealthMax"
+        ,"Stibee"
+        ,"SkullAndRoses"
+        ,"Cyn"
+        ,"NCdinos"
+        ,"Intellisys"
+        ,"KingKroach"
+    ],  
+    "title" : [
+         "SamwhaPaper"
+        ,"DFRY"
+        ,"HealthMax"
+        ,"Stibee"
+        ,"Skull and Roses"
+        ,"Cyn"
+        ,"NCdinos/"
+        ,"Intellisys"
+        ,"KingKroach"
+    ],
+    "small" : [
+         ""
+        ,""
+        ,""
+        ,""
+        ,""
+        ,""
+        ,"kiosk"
+        ,""
+        ,""
+    ]
+}

@@ -1,0 +1,15 @@
+@import "./common/variable";
+@import "./common/reset";
+@import "./common/font";
+@import "./common/mixin";
+@import "./common/animation";
+
+@import "./import/components/layout";
+@import "./import/components/loading";
+@import "./import/components/sns";
+@import "./import/components/pageMove";
+@import "./import/components/hambugerMenu";
+
+@import "./import/partials/header";
+@import "./layout/sub/works/worksList"; 
+@import "./import/partials/footer";

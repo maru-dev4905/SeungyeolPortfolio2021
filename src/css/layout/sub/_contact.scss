@@ -1,0 +1,238 @@
+.contact{
+    width: 100vw;
+    height: 100vh;
+    background-color: $white3;
+
+    .inner{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    li{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 75px;
+        margin-bottom: 3.906vw;
+        opacity: 0;
+        transform: translateY(100%) scaleY(1.5);
+        transition-duration: 0.75s;
+
+        @for $var from 1 to 4 {
+            &:nth-child(#{$var}){
+                transition-delay: #{$var * 0.2s};
+            }
+        }
+        &.show{
+            opacity: 1;
+            transform: translateY(0) scaleY(1);
+        }
+        h3{
+            font-size: 125px;
+            font-size: 6.510vw;
+            line-height: 0;
+            height: 0;
+            padding: 50px 0;
+            padding: 2.604vw 0;
+            font-family: "PlayfairDisplay-medium";
+
+            &.italic{
+                font-family: "PlayfairDisplayItalic-medium";
+            }
+
+        }
+        button{
+            font-size: 40px;
+            font-size: 2.604vw;
+            line-height: 0;
+            height: 0;
+            font-family: "PlayfairDisplay-medium";
+            width: 350px;
+            width: 18.229vw;
+            height: 150px;
+            height: 7.813vw;
+            border-radius: 50%;
+            border: 1px solid $black1;
+            position: relative;
+            overflow: hidden;
+            transition: 0.3s cubic-bezier(.25,.46,.45,.94);
+
+            &:hover{
+                color: $white3;
+                background-color: $black1;
+            }
+        }
+        a{
+            font-size: 125px;
+            font-size: 6.510vw;
+            font-family: "PlayfairDisplay-medium";
+            color: $blue1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            span{
+                margin-bottom: 20px;
+                margin-bottom: 1.042vw;
+            }
+            &::after{
+                content: "";
+                display: block;
+                width: 100%;
+                height: 3px;
+                height: 0.156vw;
+                background-color: $blue1;
+                transition: 0.75s cubic-bezier(.25,.46,.45,.94);;
+            }
+            
+            &:hover{
+                &::after{
+                    transform: translateX(100%);
+                }
+            }
+            
+            
+        }
+        span.line{
+            width: 440px;
+            width: 22.917vw;
+            height: 3px;
+            height: 0.156vw;
+            background-color: $black1;
+            position: relative;
+            margin-top: 35px;
+            margin-top: 1.823vw;
+            &::after{
+                content: "wonderful";
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: -35px;
+                top: -1.823vw;
+                font-size: 24px;
+                font-size: 1.250vw;
+                font-family: "PlayfairDisplay-medium";
+                color: $black1;
+            }
+        }
+        i{
+            width: 100px;
+            width: 5.208vw;
+            height: 100px;
+            height: 5.208vw;
+            background: url("../images/icons/ico-flower-blue.svg") no-repeat center / cover;
+            animation: loopSpin 5s linear infinite;
+        }
+        &:last-child{
+            margin-bottom: 0;
+            h3:nth-child(3){
+                position: relative;
+                width: 730px;
+                width: 38.021vw;
+                display: flex;
+
+                p{
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    opacity: 0;
+                    visibility: hidden;
+
+                    &.active{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+        @include responsive("iphone"){
+            flex-direction: column;
+            margin-bottom: 0;
+
+            h3{
+                font-size: 32px;
+                font-size: 8.889vw;
+                padding: 11px 0;
+                padding: 3.056vw 0;
+                text-align: center;
+                margin-bottom: 45px;
+                margin-bottom: 12.500vw;
+            }
+
+            &:first-child{
+                h3:nth-child(2){
+                    &::after{
+                        content: "great!";
+                        font-family: "PlayfairDisplay-medium";
+                        margin-left: 15px;
+                        margin-left: 4.167vw;
+                    }
+                }
+                h3:last-child{
+                    display: none;
+                }
+            }
+            &:nth-child(2){
+                flex-direction: column-reverse;
+            }
+            a{
+                font-size: 32px;
+                font-size: 8.889vw;
+                margin-bottom: 45px;
+                margin-bottom: 12.500vw;
+
+                &:after{
+                    height: 1.5px;
+                }
+            }
+            button{
+                margin-bottom: 45px;
+                margin-bottom: 12.500vw;
+                font-size: 32px;
+                font-size: 8.889vw;
+                border: none;
+                border-radius: 0;
+                width: max-content;
+                &::after{
+                    content: "for";
+                    margin-left: 13px;
+                    margin-left: 3.611vw;
+                }
+            }
+            &:last-child{
+                h3{
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    &:first-child{
+                        display: none;
+                    }
+                    &:nth-child(3){
+                        width: 100%;
+                        p{
+                            width: 100%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                        }
+                    }
+                    
+                }
+                span{
+                    display: none;
+                }
+            }
+            i{
+                width: 24px;
+                width: 6.667vw;
+                height: 24px;
+                height: 6.667vw;
+            }
+        }
+    }
+}

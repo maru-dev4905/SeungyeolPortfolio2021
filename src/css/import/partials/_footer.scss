@@ -1,0 +1,173 @@
+footer{
+    padding-top: 150px;
+    padding-top: 7.813vw;
+    background-color: $white2;
+
+    @include responsive("iphone"){
+        padding-top: 70px;
+        padding-top: 19.444vw;
+    }
+
+    .footer-list{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 150px;
+        padding-bottom: 7.813vw;
+
+        @include responsive("iphone"){
+            padding-bottom: 50px;
+            padding-bottom: 13.889vw;
+
+            & > li:first-child{
+                display: none;
+            }
+        }
+
+        .top-btn{
+            font-size: 20px;
+            font-size: 1.042vw;
+            font-family: "Roboto";
+            font-weight: 500;
+            color: $black2;
+            transition: 0.3s ease;
+
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+
+        .snb{
+            width: 200px;
+            width: 10.417vw;
+
+            @include responsive("iphone"){
+                width: 46px;
+                width: 12.778vw;
+            }
+            li{
+                font-size: 20px;
+                font-size: 1.042vw;
+                font-family: "Roboto";
+                font-weight: 500;
+                color: #323232;
+                margin-bottom: 10px;
+                margin-bottom: 0.521vw;
+                opacity: 0.4;
+                transition: 0.3s ease;
+
+                &:hover{
+                    opacity: 1;
+                }
+
+                @include responsive("iphone"){
+                    font-size: 11px;
+                    font-size: 3.056vw;
+                    margin-bottom: 10px;
+                    margin-bottom: 2.778vw;
+                }
+            }
+        }
+
+        .download-btn{
+            display: flex;
+            height: max-content;
+            .download-icon{
+                width: 46px;
+                width: 2.396vw;
+                height: 46px;
+                height: 2.396vw;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $black2;
+                margin-right: 13px;
+                margin-right: 0.677vw;
+                transition: 0.5s ease;
+                i{
+                    width: 19.37px;
+                    width: 1.009vw;
+                    height: 19.37px;
+                    height: 1.009vw;
+                    background: url("../images/icons/ico-download-w.png") no-repeat center / cover;
+                }
+
+                &:hover{
+                    background-color: rgba($color: $black2, $alpha: 0.5);
+                }
+
+                @include responsive("iphone"){
+                    width: 26px;
+                    width: 7.222vw;
+                    height: 26px;
+                    height: 7.222vw;
+                    margin-right: 7px;
+                    margin-right: 1.944vw;
+
+                    i{
+                        width: 8px;
+                        width: 2.222vw;
+                        height: 8px;
+                        height: 2.222vw;
+                    }
+                }
+            }
+            .download-text{
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+
+                p{
+                    font-size: 18px;
+                    font-size: 0.938vw;
+                    font-family: "Roboto";
+                    font-weight: 400;
+                    color: #323232;
+                    line-height: 21px;
+                    line-height: 1.094vw;
+                }
+                span{
+                    font-size: 18px;
+                    font-size: 0.938vw;
+                    font-family: "Roboto";
+                    font-weight: 300;
+                    color: #323232;
+                    opacity: 0.4;
+                    line-height: 21px;
+                    line-height: 1.094vw;
+                }
+                @include responsive("iphone"){
+                    p{
+                        font-size: 9px;
+                        font-size: 2.500vw;
+                        line-height:1.05;
+                    }
+                    span{
+                        font-size: 9px;
+                        font-size: 2.500vw;
+                        line-height: 1.05;
+                    }
+                }
+            }
+        }
+    }
+    .copy{
+        font-size: 18px;
+        font-size: 0.938vw;
+        font-family: "Roboto";
+        font-weight: 400;
+        color: $black2;
+        text-align: center;
+        padding-bottom: 34px;
+        padding-bottom: 1.771vw;
+
+        @include responsive("iphone"){
+            font-size: 11px;
+            font-size: 3.056vw;
+            padding-bottom: 12px;
+            padding-bottom: 3.333vw;
+        }
+    }
+}

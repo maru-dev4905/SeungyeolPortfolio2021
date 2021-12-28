@@ -1,6 +1,13 @@
-main(data-scroll-container) 
-    section.intro(data-scroll-section)
+main
+    section#top.intro(data-scroll-section)
         .intro--wrapper
+            .intro--box(data-scroll)
+                .black--box 
+                .black--box 
+                .intro--percentage
+                    span 0
+                    span.line 
+                    span 0
             .line--container(data-scroll data-scroll-speed="2") 
                 .line--circle 
                 .line--diagonal
@@ -8,12 +15,11 @@ main(data-scroll-container)
                 .line--vertical
             .intro--text--container 
                 .intro--text--inner
-                    .intro--text--group.outside.fadeIn(data-scroll data-scroll-speed="-2") 
-                        h2 Seungyeol 
-                        h2 Portfolio 
+                    .intro--text--group.outside.fadeIn
+                        h2(data-scroll data-scroll-speed="-2")  Seungyeol 
+                        h2(data-scroll data-scroll-speed="-2")  Portfolio 
             .intro--subText--container#trigger1
                 .intro--text--inner
-                
                     a(href="./works.html") Go to Works
                     .intro--text--group  
                         span Interactive
@@ -21,19 +27,20 @@ main(data-scroll-container)
                         span Trendy
                         button.intro--animBtn
                             i 
-                            | Click here!
+                            | I like blue
             .intro--img--container 
                 .intro--img--inner
-                    .intro--text--group.inside.fadeIn
-                        h2(data-scroll data-scroll-speed="-2") Seungyeol 
-                        h2(data-scroll data-scroll-speed="-2") Portfolio 
+                    .intro--text--inner 
+                        .intro--text--group.inside.fadeIn
+                            h2(data-scroll data-scroll-speed="-2") Seungyeol 
+                            h2(data-scroll data-scroll-speed="-2") Portfolio 
                     ul.intro--img--group
                         li 
-                            img(src="./images/visual/flower1.jpg", alt="flower") 
+                            img(src="./images/visual/flower3.jpg", alt="flower") 
                         li 
                             img(src="./images/visual/flower2.jpg", alt="flower") 
                         li 
-                            img(src="./images/visual/flower3.jpg", alt="flower") 
+                            img(src="./images/visual/flower1.jpg", alt="flower") 
 
                     .line--container(data-scroll data-scroll-speed="2") 
                         .line--circle 
@@ -130,7 +137,8 @@ main(data-scroll-container)
                 h3(data-glitch="H")  h
         article.works--item#blue 
             .works--item--img 
-                img(src="./images/works/samwhapaper-visual.png", alt="samwhapaper" data-scroll data-scroll-speed="2")
+                .works--item--img-inner( data-scroll data-scroll-speed="2")
+                    img(src="./images/works/samwhapaper-visual.png", alt="samwhapaper")
                 .works--item--bg 
             .works--item--text( data-scroll data-scroll-speed="1")
                 .works--item--title 
@@ -141,11 +149,12 @@ main(data-scroll-container)
                     p HTML5 / CSS3 / JAVASCRIPT / JQUERY / 
                         br
                         | SWIPER.JS / SCROLLMAGIC.JS / LUCID.JS / GSAP / FULLPAGE.JS
-                a.works--item--link(href="#") Move Detail Page
+                a.works--item--link.works(href="./worksDetail.html" data-projectName="SamwhaPaper" worksName="SamwhaPaper") Move Detail Page
 
         article.works--item#black 
             .works--item--img 
-                img(src="./images/works/kingkroach-visual.png", alt="kingkroach" data-scroll data-scroll-speed="2")
+                .works--item--img-inner( data-scroll data-scroll-speed="2")
+                    img(src="./images/works/kingkroach-visual.png", alt="kingkroach")
                 .works--item--bg
             .works--item--text( data-scroll data-scroll-speed="1")
                 .works--item--title 
@@ -156,11 +165,12 @@ main(data-scroll-container)
                     p HTML5 / CSS3 / JAVASCRIPT / JQUERY / 
                         br
                         | SWIPER.JS / SCROLLMAGIC.JS / LUCID.JS / GSAP / FULLPAGE.JS
-                a.works--item--link(href="#") Move Detail Page
+                a.works--item--link.works(href="./worksDetail.html" data-projectName="KingKroach" worksName="KingKroach") Move Detail Page
 
         article.works--item#brown
             .works--item--img 
-                img(src="./images/works/bossathome-visual.png", alt="bossathome" data-scroll data-scroll-speed="2")
+                .works--item--img-inner( data-scroll data-scroll-speed="2")
+                    img(src="./images/works/bossathome-visual.png", alt="bossathome" )
                 .works--item--bg         
             .works--item--text( data-scroll data-scroll-speed="1")
                 .works--item--title 
@@ -171,11 +181,12 @@ main(data-scroll-container)
                     p HTML5 / CSS3 / JAVASCRIPT / JQUERY / 
                         br
                         | SWIPER.JS / SCROLLMAGIC.JS / LUCID.JS / GSAP / FULLPAGE.JS
-                a.works--item--link(href="#") Move Detail Page
+                a.works--item--link.works(href="./worksDetail.html" data-projectName="Boss-at-home"  worksName="Boss-at-home") Move Detail Page
 
         article.works--item#green
             .works--item--img 
-                img(src="./images/works/healthmax-visual.png", alt="healthmax" data-scroll data-scroll-speed="2")
+                .works--item--img-inner( data-scroll data-scroll-speed="2")
+                    img(src="./images/works/healthmax-visual.png", alt="healthmax")
                 .works--item--bg         
             .works--item--text( data-scroll data-scroll-speed="1")
                 .works--item--title 
@@ -186,11 +197,12 @@ main(data-scroll-container)
                     p HTML5 / CSS3 / JAVASCRIPT / JQUERY / 
                         br
                         | SWIPER.JS / SCROLLMAGIC.JS / LUCID.JS / GSAP / FULLPAGE.JS
-                a.works--item--link(href="#") Move Detail Page
+                a.works--item--link.works(href="./worksDetail.html" data-projectName="HealthMax" worksName="HealthMax") Move Detail Page
 
     section.works-link(data-scroll-section)
         a.works--all-link(href="./works.html") 
             span View all projects 
+    
     section.thanks-text(data-scroll-section)
         i 
         h4 Thanks you for looking

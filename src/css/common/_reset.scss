@@ -67,3 +67,11 @@ button{
 		outline: none;
 	}
 }
+.c-scrollbar { display: none; }
+.fc-blue { color: $blue1; }
+.fc-black { color: $black1 !important; }
+
+.stop-scrolling {
+	height: 100%;
+	overflow: hidden;
+  }

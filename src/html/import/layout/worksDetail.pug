@@ -1,0 +1,48 @@
+include ../common/mixin.pug
+
+section.worksDetail(data-scroll-section)
+    .worksDetail--intro 
+        .inner 
+            aside 
+                a(href="./works.html" data-scroll data-scroll-speed="-2") back to all project 
+                i 
+            .worksDetail--intro--wrap 
+                .worksDetail--title(data-scroll data-scroll-speed="-2")
+                    h2.title 
+                .worksDetail--content 
+                    h3.initial 
+                        span 
+                        span(data-scroll data-scroll-speed="2") .
+                    .content 
+                        h4.personnel.content-text 
+                        p.time.content-text 
+                        h4.kind.content-text 
+                        p.skill.content-text 
+                        a.git-link.content-text(href="#") go to github 
+                        a.site-link.content-text(href="#") go to site 
+        .obj--group(data-scroll data-scroll-speed="2")
+            .line 
+            .circle 
+section.worksDetail--img--container(data-scroll-section)
+
+section.worksDetail--next-content(data-scroll-section)
+    .inner 
+        aside( data-scroll data-scroll-speed="-2")
+            a(href="./works.html") back to all projects 
+            h3
+        .content
+            a.next-link(href="./worksDetail.html")  
+                .top(data-scroll data-scroll-speed="-2")
+                    p next 
+                    .text 
+                        h4 
+                        span 
+                .bot(data-scroll data-scroll-speed="-1.5")
+                    p next
+                    h3 
+                    i 
+        .obj--group(data-scroll data-scroll-speed="2")
+            .circle 
+            .line 
+            .circle  
+    include ../components/sns.pug

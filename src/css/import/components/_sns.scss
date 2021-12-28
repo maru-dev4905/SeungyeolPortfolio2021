@@ -1,0 +1,59 @@
+
+.snb{
+    position: absolute;
+    bottom: 65px;
+    bottom: 3.385vw;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include responsive("iphone"){
+        bottom: 40px;
+        bottom: 11.111vw;
+    }
+
+    ul{
+        display: flex;
+        align-items: center;
+        transform: translateY(10px);
+        opacity: 0;
+        animation: fadeOut-down 0.5s ease forwards;
+        a{
+            font-size: 20px;
+            font-size: 1.042vw;
+            font-family: "Roboto";
+            font-weight: 500;
+            color: #323232;
+            margin-right: 50px;
+            margin-right: 2.604vw;
+            opacity: 0.4;
+            transition: 0.5s ease;
+
+            &:hover{
+                opacity: 1;
+            }
+        }
+        @include responsive("iphone"){
+            width: calc(100vw - 13.889vw);
+            margin: 0 auto;
+            justify-content: space-between;
+            a{
+                font-size: 11px;
+                font-size: 3.056vw;
+            }
+        }
+    }
+}
+.worksList section:nth-child(2){
+    &.active.fp-section{
+        .snb ul{
+            animation: fadeIn-up 0.5s 2s ease forwards;
+        }
+    }
+}
+.contact_wrap .snb{
+    ul{
+        animation: none;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

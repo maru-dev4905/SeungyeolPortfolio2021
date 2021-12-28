@@ -1,0 +1,263 @@
+body{
+    background-color: $white2;
+}
+.about{
+    height: 250vh;
+    padding-top: 125px;
+    padding-top: 6.510vw;
+
+    @include responsive("iphone"){
+        padding-top: 114px;
+        padding-top: 31.667vw;
+        height: 100%;
+    }
+}
+.about--img--group{
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    overflow: hidden;
+    z-index: 0;
+
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        &:nth-child(1){
+            z-index: 1;
+        }
+        &:nth-child(2){
+            z-index: 2;
+            opacity: 0;
+            transition: 0.75s cubic-bezier(.25,.46,.45,.94);
+        }
+    }
+
+    @include responsive("iphone"){
+        transform: none !important;
+        position: relative;
+        width: calc(100vw - 50px);
+        width: calc(100vw - 13.889vw);
+        height: max-content;
+        margin: 0 auto;
+
+        img{
+            position: relative;
+
+            &:nth-child(1){
+                display: none !important;
+            }
+            &:nth-child(2){
+                opacity: 1 !important;
+            }
+        }
+    }
+    &:hover{
+        img:nth-child(2){
+            opacity: 1;
+        }
+    }
+}
+.about--text--group{
+    margin-left: auto;
+    width: 50vw;
+    padding-left: 85px;
+    padding-left: 4.427vw;
+
+    h2{
+        font-size: 150px;
+        font-size: 7.813vw;
+        font-family: "PlayfairDisplayItalic-medium";
+        font-weight: 600;
+        margin-bottom: 50px;
+        margin-bottom: 2.604vw;
+        color: $black2;
+        line-height: 1.25;
+        opacity: 0;
+        transform: translateY(10px);
+        animation: fadeIn-up 0.75s 0.25s cubic-bezier(.25,.46,.45,.94) forwards;
+    }
+    h3{
+        font-size: 38px;
+        font-size: 1.979vw;
+        font-family: "PlayfairDisplay-medium";
+        font-weight: 400;
+        margin-bottom: 40px;
+        margin-bottom: 2.083vw;
+        color: $black2;
+        line-height: 1.25;
+        opacity: 0;
+        transform: translateY(10px);
+        animation: fadeIn-up 0.75s 0.4s cubic-bezier(.25,.46,.45,.94) forwards;
+    }
+    h4{
+        font-size: 26px;
+        font-size: 1.354vw;
+        font-family: "Graphik-regular";
+        font-weight: 500;
+        color: $black2;
+        line-height: 1.25;
+        margin-bottom: 20px;
+        margin-bottom: 1.042vw;
+        opacity: 0;
+        transform: translateY(10px);
+        animation: fadeIn-up 0.75s 0.55s cubic-bezier(.25,.46,.45,.94) forwards;
+    }
+    h5{
+        font-size: 16;
+        font-size: 0.833vw;
+        font-family: "Graphik-regular";
+        font-weight: 400;
+        color: $black2;
+        line-height: 1.25;
+        margin-bottom: 60px;
+        margin-bottom: 3.125vw;
+        opacity: 0;
+        transform: translateY(10px);
+        animation: fadeIn-up 0.75s 0.7s cubic-bezier(.25,.46,.45,.94) forwards;
+    }
+    p{
+        font-size: 14px;
+        font-size: 0.729vw;
+        font-family: "Graphik-regular";
+        font-weight: 400;
+        color: rgba($color: $black2, $alpha: 0.7);
+        line-height: 1.25;
+        margin-bottom: 60px;
+        margin-bottom: 3.125vw;
+
+        &:nth-of-type(1){
+            opacity: 0;
+            transform: translateY(10px);
+            animation: fadeIn-up 0.75s 0.85s cubic-bezier(.25,.46,.45,.94) forwards;
+        }
+        &:nth-of-type(2){
+            opacity: 0;
+            transform: translateY(10px);
+            animation: fadeIn-up 0.75s 1s cubic-bezier(.25,.46,.45,.94) forwards;
+        }
+
+    }
+    .skill{
+        margin-top: 250px;
+        margin-top: 13.021vw;
+
+        h3{
+            font-size: 62px;
+            font-size: 3.229vw;
+            font-family: "PlayfairDisplay-medium";
+            font-weight: 500;
+            color: $black2;
+            margin-bottom: 50px;
+            margin-bottom: 2.604vw;
+            opacity: 0;
+            transform: translateY(10px);
+            animation: none;
+        }
+
+        h4{
+            font-size: 30px;
+            font-size: 1.563vw;
+            font-family: "Graphik-regular";
+            font-weight: 400;
+            color: $black2;
+            margin-bottom: 0.781vw;
+        }
+        p{
+            font-size: 20px;
+            font-size: 1.042vw;
+            font-family: "Graphik-regular";
+            font-weight: 400;
+            color: rgba($color: $black2, $alpha: 0.7);
+            line-height: 1.5;
+
+            
+            @include responsive("iphone"){
+                font-size: 14px;
+            }
+        }
+        li{
+            margin-bottom: 35px;
+            margin-bottom: 1.823vw;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        
+        &.show{
+            h3{
+                animation: fadeIn-up 0.75s cubic-bezier(.25,.46,.45,.94) forwards;
+            }
+            li{
+                @for $var from 0 to 7 {
+                    &:nth-of-type(#{$var}){
+                        animation: fadeIn-up 0.75s #{$var * 0.15}s cubic-bezier(.25,.46,.45,.94) forwards;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive("iphone"){
+        padding-left: 0;
+        width: calc(100vw - 50px);
+        width: calc(100vw - 13.889vw);
+        margin: 0 auto;
+
+        .about--text--group{
+            padding-top: 50px;
+            padding-top: 13.889vw;
+        }
+        h2{
+            font-size: 62px;
+            font-size: 17.222vw;
+            margin-bottom: 20px;
+            margin-bottom: 5.556vw;
+        }
+        h3{
+            font-size: 20px;
+            font-size: 5.556vw;
+            margin-bottom: 40px;
+            margin-bottom: 11.111vw;
+        }
+        h4{
+            font-size: 18px;
+            font-size: 5vw;
+            margin-bottom: 20px;
+            margin-bottom: 5.556vw;
+        }
+        h5{
+            font-size: 14px;
+            font-size: 3.889vw;
+            margin-bottom: 40px;
+            margin-bottom: 11.111vw;
+        }
+        p{
+            font-size: 12px;
+            font-size: 3.333vw;
+            margin-bottom: 40px;
+            margin-bottom: 11.111vw;
+        }
+        .skill{
+            margin-top: 150px;
+            margin-top: 41.667vw;
+
+            h3{
+                font-size: 42px;
+                font-size: 11.667vw;
+                margin-bottom: 40px;
+                margin-bottom: 11.111vw;
+            }
+            li{
+                margin-bottom: 28px;
+                margin-bottom: 7.778vw;
+            }
+            h4{
+                font-size: 22px;
+                font-size: 6.111vw;
+                margin-bottom: 10px;
+                margin-bottom: 2.778vw;
+            }
+        }
+    }
+}

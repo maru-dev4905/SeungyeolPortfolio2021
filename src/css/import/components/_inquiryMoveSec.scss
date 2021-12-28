@@ -1,0 +1,89 @@
+.inquiry-move{
+    padding-top: 300px;
+    padding-top: 15.625vw;
+    position: relative;
+    background-color: $white2;
+
+    @include responsive("iphone"){
+        padding-top: 105px;
+        padding-top: 29.167vw;
+    }
+
+    a{
+        width: 200px;
+        width: 10.417vw;
+        height: 200px;
+        height: 10.417vw;
+        position: absolute;
+        top: -5.208vw;
+        top: calc(15.625vw - 5.208vw);
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 100%;
+        background-color: $black2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        transition: 0.5s cubic-bezier(.25,.46,.45,.94);
+
+        @include responsive("iphone"){
+            width: 60px;
+            width: 16.667vw;
+            height: 60px;
+            height: 16.667vw;
+            top: 70px;
+            top: 19.444vw;
+        }
+
+        &::after{
+            content: "";
+            width: 36px;
+            width: 1.875vw;
+            height: 36px;
+            height: 1.875vw;
+            display: block;
+            background: url("../images/icons/ico-right-arrow-w.svg") no-repeat center / cover;
+            
+            @include responsive("iphone"){
+                width: 20px;
+                width: 5.556vw;
+                height: 20px;
+                height: 5.556vw;
+            }
+        }
+
+        &:hover{
+            background-color: rgba($color: $gray3, $alpha: 1);
+
+            &+ul li{
+                color: rgba($color: $black2, $alpha: 1);
+            }
+        }
+    }
+
+    ul{
+        display: flex;
+        animation: loopMove 60s linear infinite;
+        transform: translateX(-100%);
+        
+        li{
+            font-size: 150px;
+            font-size: 7.813vw;
+            font-family: "Roboto";
+            font-weight: 600;
+            color: rgba($color: $gray3, $alpha: 0.3);
+            white-space: nowrap;
+            margin-right: 100px;
+            margin-right: 5.208vw;
+            transition: 0.5s cubic-bezier(.25,.46,.45,.94);
+
+            @include responsive("iphone"){
+                font-size: 42px;
+                font-size: 11.667vw;
+                margin-right: 50px;
+                margin-right: 13.889vw;
+            }
+        }
+    }
+}

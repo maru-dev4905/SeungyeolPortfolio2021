@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+    - var pageName = "contact";
+    include ./import/partials/head.pug
+    body.contact_wrap(data-scroll-container)
+        include ./import/partials/subHeader.pug
+
+        include ./import/layout/contact.pug
+        
+        include ./import/components/hambugerMenu.pug
+
+        include ./import/components/pagemove.pug
+
+        include ./import/components/sns.pug
+
+        include ./import/partials/subScript.pug

@@ -6,19 +6,38 @@ header{
     left: 0;
     width: 100vw;
     z-index: 900;
+    opacity: 0;
 
-    .inner{
+    &.show{
+        animation: fadeIn 0.75s 4s cubic-bezier(.25,.46,.45,.94) forwards;
+    }
+    &.sub{
+        animation: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    .header-inner{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-top: 46px;
         margin-top: 2.396vw;
         height: max-content;
+        
+        @include responsive("iphone"){
+            margin-top: 25px;
+            margin-top: 6.944vw;
+        }
     }
 
     .gnb{
         width: calc(100% - 54px);
         width: calc(100% - 2.813vw);
+        
+        @include responsive("iphone"){
+            display: none;
+        }
         ul{
             width: 100%;
             height: 100%;
@@ -38,6 +57,7 @@ header{
             color: $black1;
             letter-spacing: 0.5px;
             transition: 0.5s cubic-bezier(.25,.46,.45,.94);
+            text-transform: capitalize;
 
             &:first-child{
                 margin-right: auto;
@@ -56,8 +76,6 @@ header{
     }
 
     .logo{
-        width: 58px;
-        width: 3.021vw;
         height: 32px;
         height: 1.667vw;
         margin-right: 83px;
@@ -65,6 +83,13 @@ header{
         position: relative;
         transition: 0.5s cubic-bezier(.25,.46,.45,.94);
         
+        @include responsive("iphone"){
+            width: 40px;
+            width: 11.111vw;
+            height: 22px;
+            height: 6.111vw;
+        }
+
         a{
             height: 100%;
         }
@@ -95,12 +120,21 @@ header{
             }
         }
         .logo{
-            width: 42px;
-            width: 2.188vw;
             height: 26px;
             height: 1.354vw;
             margin-right: 60px;
             margin-right: 3.125vw;
+        }
+    }
+    .hambuger--open--btn {
+        display: none;
+        transition: 0.3s ease;
+
+        @include responsive("iphone"){
+            width: 20px;
+            height: 12px;
+            display: block;
+            background: url("../images/icons/ico-hambuger-open-btn.png") no-repeat center / cover;
         }
     }
 }

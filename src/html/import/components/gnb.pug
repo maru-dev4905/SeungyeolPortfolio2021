@@ -1,6 +1,8 @@
-
 nav.gnb 
     ul 
-        each val in ['About','Works','Contact']
+        each name in ['about','works','contact']
             li 
-                a(href="./" + val + ".html")= val
+                if pageName == name
+                    a.fc-blue(href="./" + name + ".html")= name
+                else
+                    a(href="./" + name + ".html")= name

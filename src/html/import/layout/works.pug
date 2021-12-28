@@ -1,0 +1,59 @@
+include ../common/mixin.pug
+
+#fullpage.worksList
+    +worksList
+
+    .works--thumbnail 
+    section.blur.works--section
+        ul.inner.works--content--list 
+            li.col
+                a.ShamwhaPaper(href="./worksDetail.html" data-projectName="SamwhaPaper"
+                                                )
+                    span(data-glitch="01") 01
+                    h2(data-glitch="SamwhaPaper") SamwhaPaper
+                a.DFRY(href="./worksDetail.html" data-projectName="DFRY"
+                                                )
+                    span(data-glitch="02") 02
+                    h2(data-glitch="DFRY") DFRY 
+            li.col
+                a(href="./worksDetail.html" data-projectName="HealthMax"
+                                                )
+                    span(data-glitch="03") 03
+                    h2(data-glitch="HealthMax").italic HealthMax 
+                //- a(href="./worksDetail.html" data-projectName="Penitta"
+                //-                                 )
+                //-     .line 
+                //-         span(data-glitch="04") 04
+                //-     h2(data-glitch="Penitta") Penitta 
+                a(href="worksDetail.html" data-projectName="Stibee")
+                    .line 
+                        span(data-glitch="04") 04
+                    h2(data-glitch="Stibee") Stibee                
+            li.col
+                
+                a(href="./worksDetail.html" data-projectName="SkullAndRoses"
+                                                )
+                    span(data-glitch="05") 05
+                    h2(data-glitch="Skull and Roses").italic Skull and Roses
+                a(href="./worksDetail.html" data-projectName="Cyn"
+                                            )
+                    span(data-glitch="06") 06
+                    h2(data-glitch="Cyn") Cyn
+        ul.inner.works--content--list 
+            li.col
+                a(href="./worksDetail.html" data-projectName="NCdinos"
+                                            )
+                    span(data-glitch="07") 07
+                    h2(data-glitch="NCdinos/") NCdinos/
+                        small(data-glitch="kiosk") kiosk
+                
+                a(href="./worksDetail.html" data-projectName="Intellisys"
+                                            )
+                    span(data-glitch="08") 08
+                    h2(data-glitch="Intellisys") Intellisys
+
+            li.col
+                a(href="./worksDetail.html" data-projectName="KingKroach"
+                                            )
+                    span(data-glitch="09") 09
+                    h2(data-glitch="KingKroach").italic KingKroach
