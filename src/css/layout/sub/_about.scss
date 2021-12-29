@@ -1,6 +1,9 @@
 body{
     background-color: $white2;
 }
+.wrap{
+    position: relative;
+}
 .about{
     height: 250vh;
     padding-top: 125px;
@@ -12,6 +15,7 @@ body{
         height: 100%;
     }
 }
+
 .about--img--group{
     position: absolute;
     width: 50vw;

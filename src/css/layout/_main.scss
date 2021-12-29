@@ -237,6 +237,11 @@ main.intro-start{
     height: 250px;
     height: 13.021vw;
     border-radius: 100%;
+
+    @include responsive("tablet-l"){
+        width: 14.648vw;
+        height: 14.648vw;
+    }
 }
 
 .intro--img--container .circle-cont{
@@ -276,11 +281,11 @@ main.intro-start{
 
         @include responsive("tablet"){
             width: 644px;
-            width: 644px;
+            width: 83.854vw;
             height: 644px;
-            height: 644px;
-            transform: translateY(calc(-50% + -8.057vw));
-            left: -50%;
+            height: 83.854vw;
+            // transform: translateY(calc(-50% + -8.057vw));
+            left: -33.8vw;
         }
         @include responsive("iphone"){
             width: 355px;
@@ -442,6 +447,11 @@ main.intro-start{
     padding-right: 45px;
     z-index: 25;
     
+    @include responsive("tablet"){
+        padding-right: 0;
+        bottom: 22vh;
+    }
+    
     .intro--text--inner{
         width: 100%;
         width: 1330px;
@@ -452,6 +462,10 @@ main.intro-start{
         position: relative;
         transform: translateY(10px);
         opacity: 0;
+
+        @include responsive("tablet"){
+            width: 51.465vw;
+        }
         
         @include responsive("iphone"){
             display: none;
@@ -470,6 +484,10 @@ main.intro-start{
         margin-top: 10px;
         margin-top: 0.521vw;
         transition: 0.5s cubic-bezier(.25,.46,.45,.94);
+
+        @include responsive("tablet"){
+            font-size: 2.5vw;
+        }
     }
 
     span:first-child{
@@ -486,6 +504,13 @@ main.intro-start{
         transform-origin: right;
         display: flex;
         align-items: center;
+
+        @include responsive("tablet"){
+            bottom: -8vw;
+            right: 0;
+            transform: none;
+        }
+
         i{
             display: inline-block;
             width: 32px;
@@ -497,6 +522,11 @@ main.intro-start{
             animation: loopSpin 5s linear infinite;
             margin-right: 10px;
             margin-right: 0.521vw;
+
+            @include responsive("tablet"){
+                width: 4.667vw;
+                height: 4.667vw;
+            }
         }
     }
     a{
@@ -505,6 +535,10 @@ main.intro-start{
         font-family: "PlayfairDisplay-medium";
         color: $black2;
         transition: 0.5s cubic-bezier(.25,.46,.45,.94);
+
+        @include responsive("tablet"){
+            font-size: 2.5vw;
+        }
     }
 }
 

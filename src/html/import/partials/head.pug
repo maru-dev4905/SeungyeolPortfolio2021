@@ -4,6 +4,9 @@ head
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title LeeSeungyeol Portfolio 2021
 
+    link(rel="shortcut icon", href="./images/favicons/favicon.ico" type="image/x-icon")
+    link(rel="icon", href="./images/favicons/favicon.ico" type="image/x-icon")
+
     each name in ['main','about','works','contact','worksDetail']
         if pageName == name
             link(rel="stylesheet", href="./css/" + name + ".css")
@@ -15,3 +18,25 @@ head
     script(src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js")
     script( src="https://geothermie.es.fr/wp-content/themes/es-geothermie/assets/js/vendors/CustomEase.min.js?ver=4.9.5")
     script( src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js")
+    
+    //-  SEO
+    
+    meta(name="description" content="Seungyeol Portfolio 2021 version")
+    meta(name="keywords" content="portfolio, LeeSeungyeol, publisher, HTML, CSS, Javascript, Jquery, Pug, Scss, Gulp")
+    meta(name="author" content="Lee Seungyeol")
+    meta(name="robots" content="all")
+   
+    meta(property="og:url" content="http://seungy49.dothome.co.kr")
+    meta(property="og:type" content="website")
+    meta(property="og:title" content="SeungyeolPortfolio2021")
+    meta(property="og:description" content="Seungyeol Portfolio 2021 version")
+    meta(property="og:image" content="http://seungy49.dothome.co.kr/images/common/sns-banner.jpg")
+
+    //-  twitter
+    
+    meta(property="twitter:card" content="LeeSeungyeol Portfolio 2021")
+    meta(property="twitter:url" content="http://seungy49.dothome.co.kr")
+    meta(property="twitter:type" content="website")
+    meta(property="twitter:title" content="SeungyeolPortfolio2021")
+    meta(property="twitter:description" content="Seungyeol Portfolio 2021 version")
+    meta(property="twitter:image" content="http://seungy49.dothome.co.kr/images/common/sns-banner.jpg")
