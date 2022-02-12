@@ -264,7 +264,7 @@ if(path == "works.html"){
         for(var i = 0 ; i < contentLinks.length; i++){
             let itemData = contentLinks[i].dataset.projectname;
             let imgWrap = $(`<div class="${itemData} thumbnail"></div>`)
-            let img = $(`<img src="./images/works/thumbnail/${itemData}.png" alt="${itemData}">`)
+            let img = $(`<img src="./images/works/thumbnail/${itemData}.webp" alt="${itemData}">`)
             imgWrap.append(img);
             $(".works--thumbnail").append(imgWrap);
         }
@@ -474,24 +474,24 @@ else if(path == "worksDetail.html"){
 
                         // full
                         for(let i = 0 ; i < 2; i++){
-                            let fullImgitem = $(`<img src="./images/works/detail/commingSoon/commingSoon-big.png" alt="commingSoon">`)
+                            let fullImgitem = $(`<img src="./images/works/detail/commingSoon/commingSoon-big.webp" alt="commingSoon">`)
                             fullImg.eq(i).append(fullImgitem);
                         }
                         
                         for(let i = 0; i < 3; i++) {
-                            let mediumImgItem = $(`<img src = "./images/works/detail/commingSoon/commingSoon-medium.png" alt="commingSoon">`)
+                            let mediumImgItem = $(`<img src = "./images/works/detail/commingSoon/commingSoon-medium.webp" alt="commingSoon">`)
                             mediumImg.eq(i).append(mediumImgItem);
                         }
                         
                         for(let i = 0; i < 2; i++) {
-                            let smallBg = $(`<div class="bg" style="background-image:url('./images/works/detail/commingSoon/commingSoon-bg.png')"></div>`)
-                            let smallImgItem = $(`<img src = "./images/works/detail/commingSoon/commingSoon-small.png" alt="commingSoon">`)
+                            let smallBg = $(`<div class="bg" style="background-image:url('./images/works/detail/commingSoon/commingSoon-bg.webp')"></div>`)
+                            let smallImgItem = $(`<img src = "./images/works/detail/commingSoon/commingSoon-small.webp" alt="commingSoon">`)
                             smallImg.eq(i).append(smallBg);
                             smallImg.eq(i).append(smallImgItem);
 
                         }
                         // content
-                        let contentImg = $(`<img src="./images/works/detail/commingSoon/commingSoon-content.png" alt="commingSoon">`)
+                        let contentImg = $(`<img src="./images/works/detail/commingSoon/commingSoon-content.webp" alt="commingSoon">`)
                         imgBox.append(contentImg);
                     }else{
                         imgBox.attr         ("style",`background-color:${workContents[prop][11]}`);
@@ -502,26 +502,26 @@ else if(path == "worksDetail.html"){
     
                         // full
                         for(let i = 0 ; i < 2; i++){
-                            let fullImgItem = $(`<img src="./images/works/detail/${prop}/full0${i + 1}.png" alt="${prop}">`)
+                            let fullImgItem = $(`<img src="./images/works/detail/${prop}/full0${i + 1}.webp" alt="${prop}">`)
                             fullImg.eq(i).append(fullImgItem);
                         }
     
                         // medium
                         for(let i = 0 ; i < 3; i++){
-                            let mediumImgItem = $(`<img src="./images/works/detail/${prop}/medium0${i + 1}.png" alt="${prop}">`)
+                            let mediumImgItem = $(`<img src="./images/works/detail/${prop}/medium0${i + 1}.webp" alt="${prop}">`)
                             mediumImg.eq(i).append(mediumImgItem);
                         }
     
                         // small
                         for(let i = 0 ; i < 2; i++){
-                            let smallBg = $(`<div class="bg" style="background-image:url('./images/works/detail/${prop}/bg0${i+1}.png')"></div>`)
-                            let smallImgItem = $(`<img src="./images/works/detail/${prop}/small0${i + 1}.png" alt="${prop}">`)
+                            let smallBg = $(`<div class="bg" style="background-image:url('./images/works/detail/${prop}/bg0${i+1}.webp')"></div>`)
+                            let smallImgItem = $(`<img src="./images/works/detail/${prop}/small0${i + 1}.webp" alt="${prop}">`)
                             smallImg.eq(i).append(smallBg);
                             smallImg.eq(i).append(smallImgItem);
                         }
                             
                         // content
-                        let contentImg = $(`<img src="./images/works/detail/${prop}/content01.png" alt="${prop}">`)
+                        let contentImg = $(`<img src="./images/works/detail/${prop}/content01.webp" alt="${prop}">`)
                         imgBox.append(contentImg);
                     }
 
@@ -540,23 +540,23 @@ else if(path == "worksDetail.html"){
 
                     // full
                     for(let i = 0 ; i < 2; i++){
-                        let fullImgItem = $(`<img src="./images/works/detail/${prop}/full0${i + 1}.png" alt="${prop}">`)
+                        let fullImgItem = $(`<img src="./images/works/detail/${prop}/full0${i + 1}.webp" alt="${prop}">`)
                         fullImg.eq(i).append(fullImgItem);
                     }
 
                     // medium
                     for(let i = 0 ; i < 3; i++){
-                        let mediumImgItem = $(`<img src="./images/works/detail/${prop}/medium0${i + 1}.png" alt="${prop}">`)
+                        let mediumImgItem = $(`<img src="./images/works/detail/${prop}/medium0${i + 1}.webp" alt="${prop}">`)
                         mediumImg.eq(0).append(mediumImgItem);
                     }
                     for(let i = 3 ; i < 6; i++){
-                        let mediumImgItem = $(`<img src="./images/works/detail/${prop}/medium0${i + 1}.png" alt="${prop}">`)
+                        let mediumImgItem = $(`<img src="./images/works/detail/${prop}/medium0${i + 1}.webp" alt="${prop}">`)
                         mediumImg.eq(1).append(mediumImgItem);
                     }
 
                     // small
-                    let smallBg = $(`<div class="bg" style="background-image:url('./images/works/detail/${prop}/bg01.png')"></div>`)
-                    let smallImgItem = $(`<img src="./images/works/detail/${prop}/small01.png" alt="${prop}">`)
+                    let smallBg = $(`<div class="bg" style="background-image:url('./images/works/detail/${prop}/bg01.webp')"></div>`)
+                    let smallImgItem = $(`<img src="./images/works/detail/${prop}/small01.webp" alt="${prop}">`)
                     smallImg.append(smallBg);
                     smallImg.append(smallImgItem);
                 }

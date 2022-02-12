@@ -135,22 +135,22 @@
          ,""
          ,"commingSoon"
       ]
-    ,"KingKroach"     : [
-         "Working alone."
-        ,"K"
-        ,"KingKroach"
-        ,"Responsive Web Site / Publishing 100%"
-        ,"Publishing time : About 5 Days."
-        ,"HTML5 / CSS3 / JAVASCRIPT / JQUERY / SWIPER.JS"
-        ,"https://github.com/maru-dev4905/dfry2021"
-        ,"KINGKROACH - INTERACTION"
-        ,"Fullpage"
-        ,"대부분에 페이지를 Fullpage.js를 사용하여 작업하였으며, 이미지들이 화면을 벗어나지 않고 깨지지 않게 작업하였습니다."
-        ,"상품 상세 페이지 같은 경우 Flex Layout과 Grid Layout 으로 작업하였습니다."
-        ,"#363636"
-        ,"web"
-        ,""
-        ,""
+    ,"Klayrabbit"     : [
+          "Working alone."
+          ,"K"
+          ,"Klayrabbit"
+          ,"Responsive Web Site / Publishing 100%"
+          ,"Publishing time : About 2 Days."
+          ,"HTML5 / CSS3 / JAVASCRIPT / JQUERY / SWIPER.JS / LOCOMOTIVE-SCROLL.JS"
+          ,"https://github.com/maru-dev4905/klayrabbit"
+          ,"KLAYRABBIT - NFT"
+          ,"Locomotive Scroll / VW"
+          ,"Locomotive scroll을 사용하여 스크롤 시 패럴랙스 효과와 부드러운 스크롤 처리를 했습니다."
+          ,"VW단위를 사용해 반응형을 구현했습니다."
+          ,"#198CB0"
+          ,"web"
+          ,""
+          ,""
      ]
 
 }

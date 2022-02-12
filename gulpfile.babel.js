@@ -1,8 +1,8 @@
-const sass              = require('gulp-sass')(require('sass'));
+const sass                  = require('gulp-sass')(require('sass'));
 
 import gulp             from "gulp";
 import del              from "del";
-import image            from "gulp-imagemin";
+import imagemin         from "gulp-imagemin";
 import bro              from "gulp-bro";
 import babelify         from "babelify";
 import autoprefixer     from "gulp-autoprefixer";
@@ -11,6 +11,8 @@ import connect          from "gulp-connect";
 import changed          from "gulp-changed";
 import cleanCSS         from "gulp-clean-css";
 import gPug             from "gulp-pug";
+import rename           from "gulp-rename";
+import webp             from "gulp-webp";
 
 sass.compiler           = require("node-sass");
 
@@ -25,7 +27,7 @@ const paths = {
        ,"jsPlugin"      : DEV_SRC + "/plugin/js/*.js"
        ,"cssPlugin"     : DEV_SRC + "/plugin/css/*.css"
        ,"css"           : DEV_SRC + "/css/**/**/*.scss"
-       ,"img"           : DEV_SRC + "/images/**"
+       ,"img"           : DEV_SRC + "/images/**/*"
        ,"html"          : DEV_SRC + "/html/*.pug"
        ,"favicons"      : PUB_SRC + "/favicons/*.jpg"
        ,"fonts"         : DEV_SRC + "/fonts/*.*"
@@ -133,13 +135,31 @@ const gulp_image = () =>
     gulp
         .src(paths.dev.img)
         .pipe(changed(paths.pub.img))
-        .pipe(image())
+        // .pipe(image([webp({
+        //     quality: 65,
+        // })]))
+        .pipe(imagemin([
+            imagemin.svgo({
+                plugins: [
+                    {
+                        removeViewBox: true,
+                        cleanupIDs: false
+                    }
+                ]
+            })
+        ], {
+            verbose: true
+        }))
+        .pipe(webp({quality: 70}))
+        // .pipe(rename({ extname: '.webp' }))
         .pipe(gulp.dest(paths.pub.img))
+
+
 
 const gulp_favicon = () =>
     gulp
         .src(paths.dev.favicons)
-        .pipe(image())
+        .pipe(imagemin())
         .pipe(gulp.dest(paths.pub.favicons))
 
 const gulp_watch = () =>
