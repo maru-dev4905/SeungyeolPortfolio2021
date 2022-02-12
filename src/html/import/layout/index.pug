@@ -1,6 +1,17 @@
 main
     section#top.intro(data-scroll-section)
         .intro--wrapper
+            .intro--circle--container
+                .circle-cont.blue-style1 
+                    .intro-blue-circle(data-scroll data-scroll-speed="3") 
+                .circle-cont.blue-style2 
+                    .intro-blue-circle(data-scroll data-scroll-speed="1") 
+                .circle-cont.blue-style1 
+                    .intro-blue-circle(data-scroll data-scroll-speed="3") 
+                .circle-cont.blue-style1 
+                    .intro-blue-circle(data-scroll data-scroll-speed="3") 
+                .circle-cont.blue-style2 
+                    .intro-blue-circle(data-scroll data-scroll-speed="1") 
             .intro--box(data-scroll)
                 .black--box 
                 .black--box 
@@ -27,7 +38,7 @@ main
                         span Trendy
                         button.intro--animBtn
                             i 
-                            | I like blue
+                            | Click Here!
             .intro--img--container 
                 .intro--img--inner
                     .intro--text--inner 
@@ -35,6 +46,8 @@ main
                             h2(data-scroll data-scroll-speed="-2") Seungyeol 
                             h2(data-scroll data-scroll-speed="-2") Portfolio 
                     ul.intro--img--group
+                        .circle-cont.blue-style2 
+                            .intro-blue-circle(data-scroll data-scroll-speed="1") 
                         li 
                             img(src="./images/visual/flower3.jpg", alt="flower") 
                         li 

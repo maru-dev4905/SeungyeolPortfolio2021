@@ -25,6 +25,9 @@ header{
         margin-top: 2.396vw;
         height: max-content;
         
+        @include responsive("tablet"){
+            margin-top: 3.396vw;
+        }
         @include responsive("iphone"){
             margin-top: 25px;
             margin-top: 6.944vw;
@@ -69,6 +72,10 @@ header{
             &:hover{
                 opacity: 0.5;
             }
+
+            @include responsive("tablet"){
+                font-size: 3.604vw;
+            }
         }
         a{
             letter-spacing: -1.5px;
@@ -83,6 +90,11 @@ header{
         position: relative;
         transition: 0.5s cubic-bezier(.25,.46,.45,.94);
         
+        @include responsive("tablet"){
+            height: 2.667vw;
+            margin-right: 8.323vw;
+        }
+
         @include responsive("iphone"){
             width: 40px;
             width: 11.111vw;
@@ -117,6 +129,10 @@ header{
                     margin-left: 60px;
                     margin-left: 3.125vw;
                 }
+
+                @include responsive("tablet"){
+                    font-size: 3vw;
+                }
             }
         }
         .logo{
@@ -124,6 +140,11 @@ header{
             height: 1.354vw;
             margin-right: 60px;
             margin-right: 3.125vw;
+
+            @include responsive("tablet"){
+                height: 2vw;
+                margin-right: 7.125vw;
+            }
         }
     }
     .hambuger--open--btn {

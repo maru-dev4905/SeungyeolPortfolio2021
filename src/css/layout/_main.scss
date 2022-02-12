@@ -161,6 +161,97 @@ main.intro-start{
     transition: 0.5s cubic-bezier(.25,.46,.45,.94);
     background-color: $white3;
 }
+
+// intro section / circle group
+.intro--circle--container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    .circle-cont{
+
+        &:nth-child(1){
+            bottom: 334px;
+            bottom: 17.396vw;
+            left: -136px;
+            left: -7.083vw;
+        }
+        &:nth-child(2){
+            bottom: -28px;
+            bottom: -1.458vw;
+            left: 400px;
+            left: 20.833vw;
+        }
+        &:nth-child(3){
+            top: -59px;
+            top: -3.073vw;
+            left: 50%;
+        }
+        &:nth-child(4){
+            bottom: 175px;
+            bottom: 9.115vw;
+            right: 550px;
+            right: 28.646vw;
+        }
+        &:nth-child(5){
+            top: 156px;
+            top: 8.125vw;
+            right: -85px;
+            right: -4.427vw;
+        }
+    }
+}
+.blue-style1{
+    transition: 0.3s 0.15s cubic-bezier(.25,.46,.45,.94);
+    
+    .intro-blue-circle{
+        background-color: #2984C1;
+    }
+}
+.blue-style2{
+    transition: 0.3s 0.3s cubic-bezier(.25,.46,.45,.94);
+    
+    .intro-blue-circle{
+        background-color: #114D94;
+    }
+}
+.circle-cont{
+    position: absolute;
+    z-index: 10000000;
+    transform: translate( 30%, 30%);
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 100%;
+
+    &.active{
+        transform: translate( 0, 0);
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.intro-blue-circle{
+    width: 250px;
+    width: 13.021vw;
+    height: 250px;
+    height: 13.021vw;
+    border-radius: 100%;
+
+    @include responsive("tablet-l"){
+        width: 14.648vw;
+        height: 14.648vw;
+    }
+}
+
+.intro--img--container .circle-cont{
+    left: -125px;
+    left: -6.510vw;
+    top: 67px;
+    top: 3.490vw;
+    z-index: 100;
+}
+
 // intro section / line group
 .line--container{
     position: absolute;
@@ -190,11 +281,11 @@ main.intro-start{
 
         @include responsive("tablet"){
             width: 644px;
-            width: 644px;
+            width: 83.854vw;
             height: 644px;
-            height: 644px;
-            transform: translateY(calc(-50% + -8.057vw));
-            left: -50%;
+            height: 83.854vw;
+            // transform: translateY(calc(-50% + -8.057vw));
+            left: -33.8vw;
         }
         @include responsive("iphone"){
             width: 355px;
@@ -356,6 +447,11 @@ main.intro-start{
     padding-right: 45px;
     z-index: 25;
     
+    @include responsive("tablet"){
+        padding-right: 0;
+        bottom: 22vh;
+    }
+    
     .intro--text--inner{
         width: 100%;
         width: 1330px;
@@ -366,6 +462,10 @@ main.intro-start{
         position: relative;
         transform: translateY(10px);
         opacity: 0;
+
+        @include responsive("tablet"){
+            width: 51.465vw;
+        }
         
         @include responsive("iphone"){
             display: none;
@@ -384,6 +484,10 @@ main.intro-start{
         margin-top: 10px;
         margin-top: 0.521vw;
         transition: 0.5s cubic-bezier(.25,.46,.45,.94);
+
+        @include responsive("tablet"){
+            font-size: 2.5vw;
+        }
     }
 
     span:first-child{
@@ -400,6 +504,13 @@ main.intro-start{
         transform-origin: right;
         display: flex;
         align-items: center;
+
+        @include responsive("tablet"){
+            bottom: -8vw;
+            right: 0;
+            transform: none;
+        }
+
         i{
             display: inline-block;
             width: 32px;
@@ -411,6 +522,11 @@ main.intro-start{
             animation: loopSpin 5s linear infinite;
             margin-right: 10px;
             margin-right: 0.521vw;
+
+            @include responsive("tablet"){
+                width: 4.667vw;
+                height: 4.667vw;
+            }
         }
     }
     a{
@@ -419,6 +535,10 @@ main.intro-start{
         font-family: "PlayfairDisplay-medium";
         color: $black2;
         transition: 0.5s cubic-bezier(.25,.46,.45,.94);
+
+        @include responsive("tablet"){
+            font-size: 2.5vw;
+        }
     }
 }
 
@@ -491,6 +611,9 @@ main.intro-start{
         top: calc(50% - 3.125vw);
         z-index: 3;
         width: 100%;
+        transition: 0.5s cubic-bezier(.25,.46,.45,.94);
+        color: $white1;
+
         @include responsive("tablet"){
             top: calc(50% - 8.057vw);
         }
@@ -499,7 +622,6 @@ main.intro-start{
         }
 
         h2{
-            color: $white1;
             font-family: "PlayfairDisplayItalic-medium";
             font-size: 120px;
             font-size: 6.250vw;
@@ -507,7 +629,6 @@ main.intro-start{
             padding: 62px 0;
             padding: 3.229vw 0;
             position: absolute;
-            // transition: 0.5s cubic-bezier(.25,.46,.45,.94);
 
             &:first-child{
                 left: 0;
@@ -634,7 +755,7 @@ body{
             }
         }
         .intro--img--container{
-            .intro--text--group.inside h2{
+            .intro--text--group.inside{
                 color: $blue2;
             }
         }
@@ -666,7 +787,11 @@ body{
             .line--horizental{
                 background-color: rgba($color: $white3, $alpha: 0.2);
             }
-         }
+        }
+        .blue-style2 .intro-blue-circle{
+            background-color: #EAF7FF;
+            transition: 0.3s ease;
+        }
     }
 }
 

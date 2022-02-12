@@ -25,3 +25,13 @@ scroll.on('scroll',function(obj){
         $(".about--text--group ul.skill").addClass("show");
     }
 })
+
+const cardCont = $(".about--card--group");
+
+cardCont.click(function(){
+    if($(this).hasClass("active")){
+        $(this).removeClass("active");
+    }else{
+        $(this).addClass("active");
+    }
+});

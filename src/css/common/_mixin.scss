@@ -3,7 +3,12 @@
         @media screen and (max-width: $minIphone){
             @content;
         }
-    } @else if $device == "tablet" {
+    } @else if $device == "tablet-l"{
+        @media screen and (max-width: $maxTablet-l) {
+            @content;
+        }
+    }
+     @else if $device == "tablet" {
         @media screen and (max-width: $maxTablet) {
             @content;
         }
