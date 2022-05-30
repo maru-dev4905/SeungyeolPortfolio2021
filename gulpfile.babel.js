@@ -1,5 +1,3 @@
-const sass              = require('gulp-sass')(require('sass'));
-
 import gulp             from "gulp";
 import del              from "del";
 import image            from "gulp-imagemin";
@@ -11,6 +9,7 @@ import connect          from "gulp-connect";
 import changed          from "gulp-changed";
 import cleanCSS         from "gulp-clean-css";
 import gPug             from "gulp-pug";
+import sass             from "gulp-sass";
 
 sass.compiler           = require("node-sass");
 
