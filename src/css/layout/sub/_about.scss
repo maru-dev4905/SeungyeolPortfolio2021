@@ -28,6 +28,9 @@ body{
         top: 0;
         left: 0;
         width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
 
         &:nth-child(1){
             z-index: 1;
@@ -45,7 +48,8 @@ body{
         width: calc(100vw - 50px);
         width: calc(100vw - 13.889vw);
         height: max-content;
-        margin: 0 auto;
+        margin: 0 auto 50px;
+        margin: 0 auto 10.549vw;
 
         img{
             position: relative;
@@ -229,6 +233,8 @@ body{
             font-size: 5vw;
             margin-bottom: 20px;
             margin-bottom: 5.556vw;
+            margin-bottom: 4px;
+            margin-bottom: 0.844vw;
         }
         h5{
             font-size: 14px;

@@ -1,43 +1,42 @@
+include variable.pug
+
 -var f = false;
 -var t = true;
 
-mixin worksList 
-    section.section.works--section 
-        ul.inner.works--content--list 
-            li.col
-                +workItems(f,f,f)
-                +workItems(f,f,f)
-            li.col
-                +workItems(f,f,t)
-                +workItems(t,f,f)
-            li.col
-                +workItems(f,f,t)
-                +workItems(f,f,f)
-    section.section.works--section 
-        ul.inner.works--content--list 
-            li.col
-                +workItems(f,t,f)
-                +workItems(f,f,f)
-            li.col
-                +workItems(f,f,t)
-        include ../components/sns.pug
-
-mixin workItems(line,smalls,italic)
-    if line 
-        a(href="worksDetail.html" data-projectName="")
-            .line 
-                span(data-glitch="")
-            h2(data-glitch="")
-    else if smalls 
-        a(href="worksDetail.html" data-projectName="")
-            span(data-glitch="")
-            h2(data-glitch="") 
-                small(data-glitch="")
-    else if italic 
-        a(href="worksDetail.html" data-projectName="")
-            span(data-glitch="")
-            h2.italic(data-glitch="")      
-    else
-        a(href="worksDetail.html" data-projectName="")
-            span(data-glitch="")
-            h2(data-glitch="")
+mixin worksList(arr)
+    ul.works--list
+        -for(var x in arr)
+            li 
+                h4
+                    a(
+                        href="worksDetail.html" 
+                        data-projectName= arr[x].fullName
+                        class="works-link"
+                    )= arr[x].firstName 
+                .thumbnail
+                    img(
+                        src= arr[x].thumbnailImg 
+                        alt= arr[x].thumbnailImgText
+                    )
+                .thumbnail_mo( data-scroll data-scroll-sticky data-scroll-target="#top")
+                    button.thumbnail-close-btn(type="button")
+                    a(
+                        href="worksDetail.html"
+                        data-projectName= arr[x].fullName
+                        class="works-link-mo"
+                    )
+                        img(
+                            src= arr[x].thumbnailMoImg
+                            alt= arr[x].thumbnailImgText
+                        )                    
+        li 
+            h4
+                a(
+                    href="contact.html"
+                ) ?
+            .thumbnail 
+                img(
+                    src="/images/works/thumbnail/you.png"
+                    art="you_thumbnail"
+                )
+            

@@ -8,6 +8,8 @@ header{
     z-index: 900;
     opacity: 0;
 
+    
+    
     &.show{
         animation: fadeIn 0.75s 4s cubic-bezier(.25,.46,.45,.94) forwards;
     }

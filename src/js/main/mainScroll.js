@@ -21,6 +21,14 @@ var scene1 = new ScrollMagic.Scene({
 //   name: "1"
 // });
 
+let winWidth = $(window).innerWidth();
+let winHeight = $(window).innerHeight();
+
+$(window).resize(function(){
+    winWidth = $(window).innerWidth();
+    winHeight = $(window).innerHeight();
+});
+
 var scroll = new LocomotiveScroll    
 ({
     el: document.querySelector(`[data-scroll-container]`),
@@ -28,23 +36,41 @@ var scroll = new LocomotiveScroll
     getDirection: true,
     inertia: 0.65,
     smartphone: {
-        smooth: true,
-        getDirection: !0,
-        inertia: 0.65,
+        smooth: false,
+        // getDirection: !0,
+        // inertia: 0.65,
     },
     tablet: {
-        smooth: true,
-        getDirection: !0,
-        inertia: 0.65,
+        smooth: false,
+        // getDirection: !0,
+        // inertia: 0.65,
     }
 });
 
 window.addEventListener("load",()=>{
-    scroll.stop();
+    if(winWidth >= 474){
+        // pc
+        scroll.stop();
+    
+        setTimeout(()=>{
+            scroll.start();
+        },6500)
+    }else{
+        // mo
+        
+        $("*").on('scroll touchmove mousewheel', function(e){
+            e.preventDefault();
+            e.stopPropagation(); 
+            
+            return false;
+        })
 
-    setTimeout(()=>{
-        scroll.start();
-    },6500)
+        setTimeout(()=>{
+
+            $('*').off('scroll touchmove mousewheel');
+        
+        },6500)
+    }
 })
 
 /* ########## 100vh Solution ############# */

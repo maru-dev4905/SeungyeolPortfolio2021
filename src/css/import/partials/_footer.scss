@@ -6,13 +6,15 @@ footer{
     @include responsive("iphone"){
         padding-top: 70px;
         padding-top: 19.444vw;
+        position: relative;
+        z-index: 100;
     }
 
     .footer-list{
         display: flex;
         justify-content: space-between;
-        padding-bottom: 150px;
-        padding-bottom: 7.813vw;
+        padding-bottom: 224px;
+        padding-bottom: 11.667vw;
 
         @include responsive("iphone"){
             padding-bottom: 50px;
@@ -39,10 +41,15 @@ footer{
         .snb{
             width: 200px;
             width: 10.417vw;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
 
             @include responsive("iphone"){
                 width: 46px;
                 width: 12.778vw;
+                position: static;
+                transform: none;
             }
             li{
                 font-size: 20px;
@@ -71,6 +78,7 @@ footer{
         .download-btn{
             display: flex;
             height: max-content;
+            cursor: pointer;
             .download-icon{
                 width: 46px;
                 width: 2.396vw;
@@ -168,6 +176,8 @@ footer{
             font-size: 3.056vw;
             padding-bottom: 12px;
             padding-bottom: 3.333vw;
+            padding-bottom: 24px;
+            padding-bottom: 6.666vw;
         }
     }
 }

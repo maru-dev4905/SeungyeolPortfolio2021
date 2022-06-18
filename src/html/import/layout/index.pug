@@ -27,8 +27,10 @@ main
             .intro--text--container 
                 .intro--text--inner
                     .intro--text--group.outside.fadeIn
-                        h2(data-scroll data-scroll-speed="-2")  Seungyeol 
-                        h2(data-scroll data-scroll-speed="-2")  Portfolio 
+                        //- h2(data-scroll data-scroll-speed="-2")  Seungyeol 
+                        h2  Seungyeol 
+                        //- h2(data-scroll data-scroll-speed="-2")  Portfolio 
+                        h2  Portfolio 
             .intro--subText--container#trigger1
                 .intro--text--inner
                     a(href="./works.html") Go to Works
@@ -43,8 +45,10 @@ main
                 .intro--img--inner
                     .intro--text--inner 
                         .intro--text--group.inside.fadeIn
-                            h2(data-scroll data-scroll-speed="-2") Seungyeol 
-                            h2(data-scroll data-scroll-speed="-2") Portfolio 
+                            //- h2(data-scroll data-scroll-speed="-2") Seungyeol 
+                            h2 Seungyeol 
+                            //- h2(data-scroll data-scroll-speed="-2") Portfolio 
+                            h2 Portfolio 
                     ul.intro--img--group
                         .circle-cont.blue-style2 
                             .intro-blue-circle(data-scroll data-scroll-speed="1") 
@@ -159,10 +163,11 @@ main
                     h4.fc-blue SamwhaPaper
                     span Interaction Adaptive Web Site
                 .works--item--desc 
-                    p HTML5 / CSS3 / JAVASCRIPT / JQUERY / 
+                    p 
+                        | PUG / SCSS / JAVASCRIPT / JQUERY / 
                         br
                         | SWIPER.JS / SCROLLMAGIC.JS / LUCID.JS / GSAP / FULLPAGE.JS
-                a.works--item--link.works(href="./worksDetail.html" data-projectName="SamwhaPaper" worksName="SamwhaPaper") Move Detail Page
+                a.works--item--link.works-link(href="./worksDetail.html" data-projectName="SamwhaPaper") Move Detail Page
 
         article.works--item#black 
             .works--item--img 
@@ -173,12 +178,11 @@ main
                 .works--item--title 
                     span Publishing
                     h4 KingKroach
-                    span Interaction Adaptive Web Site
+                    span Responsive Clone Web Site
                 .works--item--desc 
-                    p HTML5 / CSS3 / JAVASCRIPT / JQUERY / 
-                        br
-                        | SWIPER.JS / SCROLLMAGIC.JS / LUCID.JS / GSAP / FULLPAGE.JS
-                a.works--item--link.works(href="./worksDetail.html" data-projectName="KingKroach" worksName="KingKroach") Move Detail Page
+                    p 
+                        | HTML5 / CSS3 / JAVASCRIPT / JQUERY / FULLPAGE.JS
+                a.works--item--link.works-link(href="./worksDetail.html" data-projectName="KingKroach") Move Detail Page
 
         article.works--item#brown
             .works--item--img 
@@ -189,12 +193,12 @@ main
                 .works--item--title 
                     span Publishing
                     h4 Boss at Home
-                    span Interaction Adaptive Web Site
+                    span Responsive Clone Web Site
                 .works--item--desc 
-                    p HTML5 / CSS3 / JAVASCRIPT / JQUERY / 
-                        br
-                        | SWIPER.JS / SCROLLMAGIC.JS / LUCID.JS / GSAP / FULLPAGE.JS
-                a.works--item--link.works(href="./worksDetail.html" data-projectName="Boss-at-home"  worksName="Boss-at-home") Move Detail Page
+                    p 
+                        | HTML5 / CSS3 / JAVASCRIPT / JQUERY
+                //- a.works--item--link.works-link(href="./worksDetail.html" data-projectName="Boss-at-home"  worksName="Boss-at-home") Move Detail Page
+                a.works--item--link.works-link(href="./worksDetail.html" data-projectName="BossAtHome" ) Move Detail Page
 
         article.works--item#green
             .works--item--img 
@@ -205,12 +209,13 @@ main
                 .works--item--title 
                     span Publishing
                     h4 Healthmax
-                    span Interaction Adaptive Web Site
+                    span Responsive Web Site
                 .works--item--desc 
-                    p HTML5 / CSS3 / JAVASCRIPT / JQUERY / 
+                    p 
+                        | HTML5 / CSS3 / JAVASCRIPT / JQUERY / 
                         br
-                        | SWIPER.JS / SCROLLMAGIC.JS / LUCID.JS / GSAP / FULLPAGE.JS
-                a.works--item--link.works(href="./worksDetail.html" data-projectName="HealthMax" worksName="HealthMax") Move Detail Page
+                        | FULLPAGE.JS / COUNTUP.JS
+                a.works--item--link.works-link(href="./worksDetail.html" data-projectName="HealthMax") Move Detail Page
 
     section.works-link(data-scroll-section)
         a.works--all-link(href="./works.html") 

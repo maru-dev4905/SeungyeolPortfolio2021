@@ -1,4 +1,7 @@
 main.intro-start{
+    @include responsive("iphone"){
+        // overflow-x: hidden !important;
+    }
     .intro--box{
         .black--box{
             &:nth-of-type(1){
@@ -169,6 +172,10 @@ main.intro-start{
     height: 100%;
     top: 0;
     left: 0;
+
+    @include responsive("iphone"){
+        display: none;
+    }
 
     .circle-cont{
 
@@ -367,6 +374,7 @@ main.intro-start{
         top: auto;
         bottom: 95px;
         bottom: 26.389vw;
+        bottom: 50vw;
         transform: none;
     }
     .intro--text--inner{
@@ -1070,6 +1078,11 @@ body{
     width: 100vw;
     height: 400vh;
     background-color: $white2;
+    
+    @include responsive("iphone"){
+        position: relative;
+        z-index: 100;
+    }
 }
 
 // works section / obj group
@@ -1428,6 +1441,7 @@ body{
             width: calc(100vw - 13.889vw);
             height: 222px;
             height: 61.667vw;
+            z-index: 0;
         }
 
         img{
@@ -1527,6 +1541,7 @@ body{
             border-radius:30px;
             border-radius:1.563vw;
             margin: 0 auto;
+            padding: 0;
             opacity: 0;
             transform: translateY(10px);
             transition: 0.35s cubic-bezier(.25,.46,.45,.94);

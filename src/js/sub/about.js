@@ -35,3 +35,14 @@ cardCont.click(function(){
         $(this).addClass("active");
     }
 });
+
+
+
+// Age Calc
+const MY_YEAR = 2001;
+
+let now = new Date();
+const currentYear = now.getFullYear();
+const my_age = currentYear - MY_YEAR + 1;
+const ageEl = $(".about .about--text--group .age");
+ageEl.text(`(${my_age} years old)`);

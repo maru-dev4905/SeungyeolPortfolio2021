@@ -26,7 +26,7 @@
         width: 4.444vw;
         height: 16px;
         height: 4.444vw;
-        background: url("../images/icons/ico-hambuger-close-btn-w.png") no-repeat center / cover;
+        background: url("../images/icons/ico-hambuger-close-btn-w.svg") no-repeat center / cover;
         
     }
     li{
@@ -35,14 +35,8 @@
         opacity: 0;
         visibility: hidden;
 
-        transition: 1s cubic-bezier(.25,.46,.45,.94);
-        
-        $delayNumber: 0.5;
-        @for $i from 1 to 5 {
-            &:nth-child(#{$i}){
-                transition-delay: #{$delayNumber + ($i * .25)}s;
-            }
-        }
+        transition: 0.75s cubic-bezier(.25,.46,.45,.94);
+        transition-delay: 0.2s;
     }
     a{
         font-size: 54px;
@@ -64,6 +58,14 @@
             opacity: 1;
             transform: translateY(0%) scaleY(1);
             visibility: visible;
+
+            
+            $delayNumber: 0.5;
+            @for $i from 1 to 5 {
+                &:nth-child(#{$i}){
+                    transition-delay: #{$delayNumber + ($i * .25)}s;
+                }
+            }
         }
     }
 }

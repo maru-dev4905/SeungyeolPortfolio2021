@@ -20,3 +20,10 @@
         max-width: 86.111vw;
     }
 }
+
+body{
+    
+    @include responsive("iphone"){
+        overflow-x: hidden;
+    }
+}

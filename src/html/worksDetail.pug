@@ -2,13 +2,21 @@ doctype html
 html(lang="en")
     - var pageName = "worksDetail";
     include ./import/partials/head.pug
-    body(data-scroll-container)
+    body.worksDetail_wrap(data-scroll-container)
         include ./import/partials/subHeader.pug
 
         include ./import/layout/worksDetail.pug
         
+        include ./import/components/inquiryMoveSec.pug
+        
+        include ./import/partials/footer.pug
+
         include ./import/components/hambugerMenu.pug
         
         include ./import/components/pagemove.pug
         
-        include ./import/partials/subScript.pug
+        //- include ./import/partials/subScript.pug
+        
+        script(src="./js/subScroll.js") 
+        script(src="./js/worksDetail.js") 
+        script(src="./js/common.js") 

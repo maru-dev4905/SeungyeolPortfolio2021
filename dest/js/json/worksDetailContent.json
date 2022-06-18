@@ -1,0 +1,100 @@
+{
+    "SamwhaPaper"           : {
+         "tag"          : ["publishing"]
+        ,"title"        : "samwhapaper"
+        ,"kind"         : "Interaction Adaptive Web Site"
+        ,"degree"       : "Working alone / Publishing 100%"
+        ,"time"         : "Publishing time : One month"
+        ,"tech"         : "PUG / SCSS / JAVASCRIPT / JQUERY / SWIPER.JS / SCROLLMAGIC.JS / LUCID.JS / GSAP / FULLPAGE.JS"
+        ,"link"         : ["https://github.com/maru-dev4905/ShamwhaPaper-pc", "http://seung10.com/works/SamwhaPaper/pc/index.html"]
+    },
+    "DFRY"                  : {
+         "tag"          : ["publishing"]
+        ,"title"        : "dfry"
+        ,"kind"         : "Interaction Responsive Web Site"
+        ,"degree"       : "Working alone / Publishing 100%"
+        ,"time"         : "Publishing time : One month"
+        ,"tech"         : "PUG / SCSS / JAVASCRIPT / JQUERY / SCROLLMAGIC.JS / LOCOMOTIVE-SCROLL.JS / GSAP"
+        ,"link"         : ["http://seung10.com/works/Dfry2021/index.html","https://github.com/maru-dev4905/dfry2021"]
+    },
+    "HealthMax"             : {
+         "tag"          : ["publishing"]
+        ,"title"        : "healthmax"
+        ,"kind"         : "Responsive Web Site"
+        ,"degree"       : "Working alone / Publishing 100%"
+        ,"time"         : "Publishing time : 2 weeks"
+        ,"tech"         : "HTML5 / CSS3 / JAVASCRIPT / JQUERY / FULLPAGE.JS / COUNTUP.JS"
+        ,"link"         : ["http://seung10.com/works/HealthMax/index.html","https://github.com/maru-dev4905/Healthmax"]
+    },
+    "Stibee"                : {
+         "tag"          : ["publishing"]
+        ,"title"        : "stibee"
+        ,"kind"         : "Responsive Web Site"
+        ,"degree"       : "Working alone / Publishing 100%"
+        ,"time"         : "Publishing time : 2 weeks"
+        ,"tech"         : "HTML5 / CSS3 / JAVASCRIPT / JQUERY / FULLPAGE.JS / GSAP / SCROLLMAGIC.JS"
+        ,"link"         : ["http://seung10.com/works/Stibee/index.html","https://github.com/maru-dev4905/Stibee"]
+    },
+    "SkullAndRoses"         : {
+         "tag"          : ["publishing", "clone"]
+        ,"title"        : "skull&roses"
+        ,"kind"         : "Responsive Clone Web Site"
+        ,"degree"       : "Working alone / Publishing 100%"
+        ,"time"         : "Publishing time : 2 weeks"
+        ,"tech"         : "PUG / SCSS / JAVASCRIPT / JQUERY / AOS"
+        ,"link"         : ["http://seung10.com/works/SkullandRoses/index.html","https://github.com/maru-dev4905/SkullRoses"]
+    },
+    "Cyn"                   : {
+         "tag"          : ["design", "publishing"]
+        ,"title"        : "cyn"
+        ,"kind"         : "Responsive Web Site"
+        ,"degree"       : "Working alone / Publishing 100%, Design 100%"
+        ,"time"         : "All time : 3 days"
+        ,"tech"         : "PUG / SCSS / JAVASCRIPT / JQUERY / AOS"
+        ,"link"         : ["http://seung10.com/works/Cyn/index.html","https://github.com/maru-dev4905/cynsings"]
+    },
+    "NCdinos"               : {
+         "tag"          : ["publishing"]
+        ,"title"        : "ncdinos"
+        ,"kind"         : "Kiosk"
+        ,"degree"       : "Working alone / Publishing 100%"
+        ,"time"         : "Publishing time : 2 weeks"
+        ,"tech"         : "HTML5 / CSS3 / JAVASCRIPT / JQUERY / SWIPER.JS"
+        ,"link"         : ["https://github.com/maru-dev4905/NCdinos","http://seung10.com/works/NCdinos/index.html"]
+    },
+    "Intellisys"            : {
+         "tag"          : ["publishing"]
+        ,"title"        : "intellisys"
+        ,"kind"         : "Responsive Web Site"
+        ,"degree"       : "Working alone / Publishing 100%"
+        ,"time"         : "Publishing time : 2 weeks"
+        ,"tech"         : "HTML5 / CSS3 / JAVASCRIPT / JQUERY / FULLPAGE.JS / COUNTUP.JS"
+        ,"link"         : ["https://github.com/maru-dev4905/intellisys","http://seung10.com/works/Intellisys/index.html"]
+    },
+    "KingKroach"            : {
+         "tag"          : ["publishing", "clone"]
+        ,"title"        : "kingkroach"
+        ,"kind"         : "Responsive Clone Web Site"
+        ,"degree"       : "Working alone / Publishing 100%"
+        ,"time"         : "Publishing time : 2 weeks"
+        ,"tech"         : "HTML5 / CSS3 / JAVASCRIPT / JQUERY / FULLPAGE.JS"
+        ,"link"         : ["https://github.com/maru-dev4905/Kingkroach","https://seung10.com/works/KingKroach/index.html"]
+    },
+    "BossAtHome"            : {
+         "tag"          : ["publishing", "clone"]
+        ,"title"        : "bossathome"
+        ,"kind"         : "Responsive Clone Web Site"
+        ,"degree"       : "Working alone / Publishing 100%"
+        ,"time"         : "Publishing time : 2 weeks"
+        ,"tech"         : "HTML5 / CSS3 / JAVASCRIPT / JQUERY"
+        ,"link"         : ["https://github.com/maru-dev4905/Boss-at-home","https://seung10.com/works/BossAtHome/index.html"]
+    },
+    "KlayRabbit"            : {
+         "tag"          : ["publishing"]
+        ,"title"        : "klayrabbit"
+        ,"kind"         : "Responsive Web Site"
+        ,"degree"       : "Working alone / Publishing 100%"
+        ,"time"         : "Publishing time : 2 weeks"
+        ,"tech"         : "HTML5 / CSS3 / JAVASCRIPT / JQUERY / SCROLLMAGIC.JS / LOCOMOTIVE-SCROLL.JS / GSAP / SWIPER.JS"
+    }
+}

@@ -2,7 +2,7 @@ doctype html
 html(lang="en")
     - var pageName = "about";
     include ./import/partials/head.pug
-    body(data-scroll-container)
+    body.about_wrap(data-scroll-container)
         include ./import/partials/subHeader.pug
 
         include ./import/layout/about.pug
@@ -15,6 +15,9 @@ html(lang="en")
         
         include ./import/components/pagemove.pug
 
-        include ./import/components/aboutCard.pug
+        //- include ./import/components/aboutCard.pug
         
-        include ./import/partials/subScript.pug
+        //- include ./import/partials/subScript.pug
+        script(src="./js/subScroll.js") 
+        script(src="./js/about.js") 
+        script(src="./js/common.js") 

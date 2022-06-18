@@ -1,59 +1,101 @@
 include ../common/mixin.pug
 
-#fullpage.worksList
-    +worksList
+section#top.worksList(data-scroll-section)
+    .inner 
 
-    .works--thumbnail 
-    section.blur.works--section
-        ul.inner.works--content--list 
-            li.col
-                a.ShamwhaPaper(href="./worksDetail.html" data-projectName="SamwhaPaper"
-                                                )
-                    span(data-glitch="01") 01
-                    h2(data-glitch="SamwhaPaper") SamwhaPaper
-                a.DFRY(href="./worksDetail.html" data-projectName="DFRY"
-                                                )
-                    span(data-glitch="02") 02
-                    h2(data-glitch="DFRY") DFRY 
-            li.col
-                a(href="./worksDetail.html" data-projectName="HealthMax"
-                                                )
-                    span(data-glitch="03") 03
-                    h2(data-glitch="HealthMax").italic HealthMax 
-                //- a(href="./worksDetail.html" data-projectName="Penitta"
-                //-                                 )
-                //-     .line 
-                //-         span(data-glitch="04") 04
-                //-     h2(data-glitch="Penitta") Penitta 
-                a(href="worksDetail.html" data-projectName="Stibee")
-                    .line 
-                        span(data-glitch="04") 04
-                    h2(data-glitch="Stibee") Stibee                
-            li.col
-                
-                a(href="./worksDetail.html" data-projectName="SkullAndRoses"
-                                                )
-                    span(data-glitch="05") 05
-                    h2(data-glitch="Skull and Roses").italic Skull and Roses
-                a(href="./worksDetail.html" data-projectName="Cyn"
-                                            )
-                    span(data-glitch="06") 06
-                    h2(data-glitch="Cyn") Cyn
-        ul.inner.works--content--list 
-            li.col
-                a(href="./worksDetail.html" data-projectName="NCdinos"
-                                            )
-                    span(data-glitch="07") 07
-                    h2(data-glitch="NCdinos/") NCdinos/
-                        small(data-glitch="kiosk") kiosk
-                
-                a(href="./worksDetail.html" data-projectName="Intellisys"
-                                            )
-                    span(data-glitch="08") 08
-                    h2(data-glitch="Intellisys") Intellisys
+        h3.worksList--title Works 
 
-            li.col
-                a(href="./worksDetail.html" data-projectName="KingKroach"
-                                            )
-                    span(data-glitch="09") 09
-                    h2(data-glitch="KingKroach").italic KingKroach
+        +worksList(
+            [
+                {
+                     "firstName"            : "S"
+                    ,"fullName"             : "SamwhaPaper"
+                    ,"thumbnailImg"         : "/images/works/thumbnail/SamwhaPaper.png"
+                    ,"thumbnailMoImg"       : "/images/works/thumbnail/SamwhaPaper_mo.png"
+                    ,"thumbnailImgText"     : "SamwhaPaper_thumbnail"
+                },
+                {
+                     "firstName"            : "D"
+                    ,"fullName"             : "DFRY"
+                    ,"thumbnailImg"         : "/images/works/thumbnail/DFRY.png"
+                    ,"thumbnailMoImg"       : "/images/works/thumbnail/DFRY_mo.png"
+                    ,"thumbnailImgText"     : "DFRY_thumbnail"
+                },
+                {
+                     "firstName"            : "H"
+                    ,"fullName"             : "HealthMax"
+                    ,"thumbnailImg"         : "/images/works/thumbnail/HealthMax.png"
+                    ,"thumbnailMoImg"       : "/images/works/thumbnail/HealthMax_mo.png"
+                    ,"thumbnailImgText"     : "HealthMax_thumbnail"
+                },
+                {
+                     "firstName"            : "S"
+                    ,"fullName"             : "Stibee"
+                    ,"thumbnailImg"         : "/images/works/thumbnail/Stibee.png"
+                    ,"thumbnailMoImg"       : "/images/works/thumbnail/Stibee_mo.png"
+                    ,"thumbnailImgText"     : "Stibee_thumbnail"
+                },
+                {
+                     "firstName"            : "S"
+                    ,"fullName"             : "SkullAndRoses"
+                    ,"thumbnailImg"         : "/images/works/thumbnail/SkullAndRoses.png"
+                    ,"thumbnailMoImg"       : "/images/works/thumbnail/SkullAndRoses_mo.png"
+                    ,"thumbnailImgText"     : "SkullAndRoses_thumbnail"
+                },
+                {
+                     "firstName"            : "C"
+                    ,"fullName"             : "Cyn"
+                    ,"thumbnailImg"         : "/images/works/thumbnail/Cyn.png"
+                    ,"thumbnailMoImg"       : "/images/works/thumbnail/Cyn_mo.png"
+                    ,"thumbnailImgText"     : "Cyn_thumbnail"
+                },
+                {
+                     "firstName"            : "N"
+                    ,"fullName"             : "NCdinos"
+                    ,"thumbnailImg"         : "/images/works/thumbnail/NCdinos.png"
+                    ,"thumbnailMoImg"       : "/images/works/thumbnail/NCdinos_mo.png"
+                    ,"thumbnailImgText"     : "NCdinos_thumbnail"
+                },
+                {
+                     "firstName"            : "I"
+                    ,"fullName"             : "Intellisys"
+                    ,"thumbnailImg"         : "/images/works/thumbnail/Intellisys.png"
+                    ,"thumbnailMoImg"       : "/images/works/thumbnail/Intellisys_mo.png"
+                    ,"thumbnailImgText"     : "Intellisys_thumbnail"
+                },
+                {
+                     "firstName"            : "K"
+                    ,"fullName"             : "KingKroach"
+                    ,"thumbnailImg"         : "/images/works/thumbnail/KingKroach.png"
+                    ,"thumbnailMoImg"       : "/images/works/thumbnail/KingKroach_mo.png"
+                    ,"thumbnailImgText"     : "KingKroach_thumbnail"
+                },
+                {
+                     "firstName"            : "B"
+                    ,"fullName"             : "BossAtHome"
+                    ,"thumbnailImg"         : "/images/works/thumbnail/BossAtHome.png"
+                    ,"thumbnailMoImg"       : "/images/works/thumbnail/BossAtHome_mo.png"
+                    ,"thumbnailImgText"     : "BossAtHome_thumbnail"
+                },
+                {
+                     "firstName"            : "K"
+                    ,"fullName"             : "KlayRabbit"
+                    ,"thumbnailImg"         : "/images/works/thumbnail/KlayRabbit.png"
+                    ,"thumbnailMoImg"       : "/images/works/thumbnail/KlayRabbit_mo.png"
+                    ,"thumbnailImgText"     : "KlayRabbit_thumbnail"
+                }
+            ]
+        )
+        
+        .works--text 
+            p 
+                | These are the results of my publishing and design from 2020 
+                br
+                | It may differ from the website you currently operate 
+                br
+                | The test server is running together, so go to the details page 
+                br
+                | I'd appreciate it if you could click on the link. 
+                br.mo
+                br.mo
+                | If you are interested in me or want to work with me, please contact me anytime.                

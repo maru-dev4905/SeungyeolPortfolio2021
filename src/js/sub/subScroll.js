@@ -8,25 +8,29 @@ var scroll = new LocomotiveScroll
 ({
     el: document.querySelector(`[data-scroll-container]`),
     smooth: true,
-    getDirection: true,
+    // getDirection: true,
     inertia: 0.65,
     smartphone: {
-        smooth: true,
-        getDirection: !0,
-        inertia: 0.65,
+        smooth: false,
+        // getDirection: !0,
+        // inertia: 0.65,
     },
     tablet: {
-        smooth: true,
-        getDirection: !0,
-        inertia: 0.65,
+        smooth: false,
+        // getDirection: !0,
+        // inertia: 0.65,
     }
 });
 
 
-setTimeout(() => {
-    scroll.update();
-    scroll.start();
-}, 500);
+window.addEventListener("load",()=>{
+    scroll.stop();
+
+    setTimeout(()=>{
+        scroll.update();
+        scroll.start();
+    },500)
+})
 
 /* ########## 100vh Solution ############# */
 

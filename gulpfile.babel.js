@@ -1,3 +1,5 @@
+var sass = require('gulp-sass')(require('sass'));
+
 import gulp             from "gulp";
 import del              from "del";
 import image            from "gulp-imagemin";
@@ -9,7 +11,7 @@ import connect          from "gulp-connect";
 import changed          from "gulp-changed";
 import cleanCSS         from "gulp-clean-css";
 import gPug             from "gulp-pug";
-import sass             from "gulp-sass";
+// import sass             from "gulp-sass";
 
 sass.compiler           = require("node-sass");
 
@@ -29,6 +31,7 @@ const paths = {
        ,"favicons"      : PUB_SRC + "/favicons/*.jpg"
        ,"fonts"         : DEV_SRC + "/fonts/*.*"
        ,"json"          : DEV_SRC + "/js/json/*.json"
+       ,"files"         : DEV_SRC + "/files/*.*"
     },
     "pub" : {
           "mainJs"      : PUB_SRC + "/js"
@@ -42,6 +45,7 @@ const paths = {
          ,"favicons"    : PUB_SRC + "/images/favicon"
          ,"fonts"       : PUB_SRC + "/fonts"
          ,"json"        : PUB_SRC + "/js/json"
+         ,"files"       : PUB_SRC + "/files/"
     },
     "watch" : {
           "mainJs"      : DEV_SRC + "/js/main/*.js"
@@ -55,6 +59,7 @@ const paths = {
          ,"favicons"    : DEV_SRC + "/favicons/*"
          ,"fonts"       : DEV_SRC + "/fonts/*.*"
          ,"json"        : DEV_SRC + "/js/json/*.json"
+         ,"files"       : DEV_SRC + "/files/*.*"
     }
 }
 
@@ -84,7 +89,7 @@ const gulp_subJs = () =>
                 ["uglifyify",{global:true}]
             ]})
         )
-        .pipe(concat("sub.js"))
+        // .pipe(concat("sub.js"))
         .pipe(gulp.dest(paths.pub.subJs))
 
 const gulp_commonJs = () =>
@@ -141,6 +146,11 @@ const gulp_favicon = () =>
         .pipe(image())
         .pipe(gulp.dest(paths.pub.favicons))
 
+const gulp_files = () =>
+    gulp
+        .src(paths.dev.files)
+        .pipe(gulp.dest(paths.pub.files));
+
 const gulp_watch = () =>
     gulp.watch(paths.watch.mainJs       , gulp_mainJs);
     gulp.watch(paths.watch.subJs        , gulp_subJs);
@@ -153,6 +163,7 @@ const gulp_watch = () =>
     gulp.watch(paths.watch.jsPlugin     , gulp_jsPlugin);
     gulp.watch(paths.watch.cssPlugin    , gulp_cssPlugin);
     gulp.watch(paths.watch.json         , gulp_json);
+    gulp.watch(paths.watch.files        , gulp_files);
 
 const webserver = () =>
     connect.server({
@@ -168,6 +179,7 @@ const prepare = gulp.series([
     ,gulp_image
     ,gulp_favicon
     ,gulp_fonts
+    ,gulp_files
 ]);
 
 const assets = gulp.series([
