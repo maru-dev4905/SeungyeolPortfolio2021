@@ -77,7 +77,7 @@ module.exports={
         ,"degree"       : "Working alone / Publishing 100%"
         ,"time"         : "Publishing time : One month"
         ,"tech"         : "PUG / SCSS / JAVASCRIPT / JQUERY / SCROLLMAGIC.JS / LOCOMOTIVE-SCROLL.JS / GSAP"
-        ,"link"         : ["http://seung10.com/works/Dfry2021/index.html","https://github.com/maru-dev4905/dfry2021"]
+        ,"link"         : ["https://github.com/maru-dev4905/dfry2021","http://seung10.com/works/Dfry2021/index.html"]
     },
     "HealthMax"             : {
          "tag"          : ["publishing"]
@@ -86,7 +86,7 @@ module.exports={
         ,"degree"       : "Working alone / Publishing 100%"
         ,"time"         : "Publishing time : 2 weeks"
         ,"tech"         : "HTML5 / CSS3 / JAVASCRIPT / JQUERY / FULLPAGE.JS / COUNTUP.JS"
-        ,"link"         : ["http://seung10.com/works/HealthMax/index.html","https://github.com/maru-dev4905/Healthmax"]
+        ,"link"         : ["https://github.com/maru-dev4905/Healthmax","http://seung10.com/works/HealthMax/index.html"]
     },
     "Stibee"                : {
          "tag"          : ["publishing"]
@@ -95,7 +95,7 @@ module.exports={
         ,"degree"       : "Working alone / Publishing 100%"
         ,"time"         : "Publishing time : 2 weeks"
         ,"tech"         : "HTML5 / CSS3 / JAVASCRIPT / JQUERY / FULLPAGE.JS / GSAP / SCROLLMAGIC.JS"
-        ,"link"         : ["http://seung10.com/works/Stibee/index.html","https://github.com/maru-dev4905/Stibee"]
+        ,"link"         : ["https://github.com/maru-dev4905/Stibee","http://seung10.com/works/Stibee/index.html"]
     },
     "SkullAndRoses"         : {
          "tag"          : ["publishing", "clone"]
@@ -104,7 +104,7 @@ module.exports={
         ,"degree"       : "Working alone / Publishing 100%"
         ,"time"         : "Publishing time : 2 weeks"
         ,"tech"         : "PUG / SCSS / JAVASCRIPT / JQUERY / AOS"
-        ,"link"         : ["http://seung10.com/works/SkullandRoses/index.html","https://github.com/maru-dev4905/SkullRoses"]
+        ,"link"         : ["https://github.com/maru-dev4905/SkullRoses","http://seung10.com/works/SkullandRoses/index.html"]
     },
     "Cyn"                   : {
          "tag"          : ["design", "publishing"]
@@ -113,7 +113,7 @@ module.exports={
         ,"degree"       : "Working alone / Publishing 100%, Design 100%"
         ,"time"         : "All time : 3 days"
         ,"tech"         : "PUG / SCSS / JAVASCRIPT / JQUERY / AOS"
-        ,"link"         : ["http://seung10.com/works/Cyn/index.html","https://github.com/maru-dev4905/cynsings"]
+        ,"link"         : ["https://github.com/maru-dev4905/cynsings","http://seung10.com/works/Cyn/index.html"]
     },
     "NCdinos"               : {
          "tag"          : ["publishing"]
@@ -140,7 +140,7 @@ module.exports={
         ,"degree"       : "Working alone / Publishing 100%"
         ,"time"         : "Publishing time : 2 weeks"
         ,"tech"         : "HTML5 / CSS3 / JAVASCRIPT / JQUERY / FULLPAGE.JS"
-        ,"link"         : ["https://github.com/maru-dev4905/Kingkroach","https://seung10.com/works/KingKroach/index.html"]
+        ,"link"         : ["https://github.com/maru-dev4905/Kingkroach","http://seung10.com/works/KingKroach/index.html"]
     },
     "BossAtHome"            : {
          "tag"          : ["publishing", "clone"]
@@ -149,7 +149,7 @@ module.exports={
         ,"degree"       : "Working alone / Publishing 100%"
         ,"time"         : "Publishing time : 2 weeks"
         ,"tech"         : "HTML5 / CSS3 / JAVASCRIPT / JQUERY"
-        ,"link"         : ["https://github.com/maru-dev4905/Boss-at-home","https://seung10.com/works/BossAtHome/index.html"]
+        ,"link"         : ["https://github.com/maru-dev4905/Boss-at-home","http://seung10.com/works/BossAtHome/index.html"]
     },
     "KlayRabbit"            : {
          "tag"          : ["publishing"]
@@ -158,6 +158,7 @@ module.exports={
         ,"degree"       : "Working alone / Publishing 100%"
         ,"time"         : "Publishing time : 2 weeks"
         ,"tech"         : "HTML5 / CSS3 / JAVASCRIPT / JQUERY / SCROLLMAGIC.JS / LOCOMOTIVE-SCROLL.JS / GSAP / SWIPER.JS"
+        ,"link"         : ["https://github.com/maru-dev4905/klayrabbit","http://seung10.com/works/KlayRabbit/kor/index.html"]
     }
 }
 },{}],4:[function(require,module,exports){
